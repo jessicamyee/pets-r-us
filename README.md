@@ -3,7 +3,6 @@
 - Front-End deployed via [Netlify](Links fourthcoming).
 - Back-End deployed via [Heroku](Links fourthcoming).
 
-
 1. **Schema**: Below please find our Schema that drives this collaboration and project.
 
 ```
@@ -35,7 +34,7 @@ const User = new Schema(
 [Whimsical Diagram](https://whimsical.com/pets-r-us-BYYb4aEnZ6ZQp5euw1pyeM)
 3. **Team Expectations**: 
 - Please follow our Team Expectation document at the following link:
-[Team Expectations](https://docs.google.com/document/d/1eA6QCDwI73bZnpWVY_Xw4I9eVHkmDq72QwM7xrcqa0I/edit)
+[Team Expectations](https://docs.google.com/document/d/1eA6QCDwI73bZnpWVY_Xw4I9eVHkmDq72QwM7xrcqa0I/edit?usp=sharing)
 
 4. **Overview:** PetsЯUs is a full (Mongo/Express/React/Node) MERN stack application that allows local animal adoption agencies to post their adorable animals. Every year, thousands of animals are displaced and live without a home. It is our belief that every pet deserves a home. The following is a list of the features: our application has full CRUD on the back, and utilizing the React framework on the front end. 
 
@@ -59,4 +58,3 @@ const User = new Schema(
 - Create "pet-recommendation" algorithm based on user preferences (geo-tag animals, size, type, etc.)
 
 ## Change Log
-- 
