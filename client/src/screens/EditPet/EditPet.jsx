@@ -122,4 +122,4 @@ const EditPet = (props) => {
   );
 };
 
-export default ProductEdit;
+export default EditPet;
