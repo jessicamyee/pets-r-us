@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../../components/Shared/Layout/Layout";
 import { getPet, deletePet } from "../../services/pets";
 import { useParams, Link } from "react-router-dom";
-// import "./ProductDetail.css";
+// import "./PetDetail.css";
 
 const PetDetail = (props) => {
   const [pet, setPet] = useState(null);
