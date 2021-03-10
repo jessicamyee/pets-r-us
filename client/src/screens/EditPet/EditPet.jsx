@@ -36,13 +36,12 @@ const EditPet = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    let { id } = props.match.params;
     const updated = await updatePet(id, pet);
     setUpdated(updated);
   };
 
   if (isUpdated) {
-    return <Redirect to={`/pets/${props.match.params.id}`} />;
+    return <Redirect to={`/pets/${id}`} />;
   }
 
   return (

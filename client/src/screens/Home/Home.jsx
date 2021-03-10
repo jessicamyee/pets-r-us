@@ -1,15 +1,13 @@
 
-import Layout from "../../components/shared/Layout/Layout"
-// import "./Home.css"
 
-const Home = () => {
+import Layout from "../../components/Shared/Layout/Layout"
+
+function Home(props) {
   return (
-    <Layout>
-      <div>
-        This is home
-      </div>
-    </Layout>
-  )
+    <div>
+      <Layout user={props.user} />
+    </div>
+  );
 }
 
-export default Home
+export default Home;

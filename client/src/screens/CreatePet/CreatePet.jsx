@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import "./CreatePet.css";
-import Layout from "../../components/shared/Layout/Layout";
+import Layout from "../../components/Shared/Layout/Layout";
 import { Redirect } from "react-router-dom";
 import { createPet } from "../../services/pets";
 
