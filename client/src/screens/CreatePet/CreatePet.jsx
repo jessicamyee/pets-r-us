@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./CreatePet.css";
+import "./CreatePet.css";
 import Layout from "../../components/Shared/Layout/Layout";
 import { Redirect } from "react-router-dom";
 import { createPet } from "../../services/pets";
@@ -49,7 +49,7 @@ const CreatePet = (props) => {
         />
         <input
           className="input-price"
-          placeholder="Price"
+          placeholder="Adoption Fee"
           value={pet.price}
           name="price"
           required
@@ -76,7 +76,7 @@ const CreatePet = (props) => {
           className="input-adoption-link"
           placeholder="Adoption Link"
           value={pet.link}
-          name="adoption-link"
+          name="link"
           required
           onChange={handleChange}
         />
