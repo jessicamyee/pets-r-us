@@ -18,6 +18,8 @@ const CreatePet = (props) => {
 
   const [isCreated, setCreated] = useState(false);
 
+  // const [typeValue, setTypeValue] = useState('')
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setPet({
@@ -25,6 +27,10 @@ const CreatePet = (props) => {
       [name]: value,
     });
   };
+
+  // const handleSelect = (e) => {
+  //   setTypeValue(e.target.value)
+  // }
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -38,6 +44,8 @@ const CreatePet = (props) => {
   return (
     <Layout user={props.user}>
       <form className="create-form" onSubmit={handleSubmit}>
+      <label>Name: </label>
+
         <input
           className="input-name"
           placeholder="Name"
@@ -47,15 +55,19 @@ const CreatePet = (props) => {
           autoFocus
           onChange={handleChange}
         />
+                <label>Adoption Fee: </label>
+
         <input
           className="input-price"
-          placeholder="Adoption Fee"
-          value={`${pet.price}`}
+          placeholder="Adoption Fee (USD)"
+          value={pet.price}
           name="price"
           required
           onChange={handleChange}
           
         />
+                <label>Image Description: </label>
+
         <textarea
           className="input-textarea-description"
           rows={5}
@@ -65,6 +77,8 @@ const CreatePet = (props) => {
           required
           onChange={handleChange}
         />
+        <label>Image Link: </label>
+
         <input
           className="input-image-link"
           placeholder="Image Link"
@@ -73,6 +87,7 @@ const CreatePet = (props) => {
           required
           onChange={handleChange}
         />
+                <label>Adoption Link </label>
         <input
           className="input-adoption-link"
           placeholder="Adoption Link"
@@ -81,28 +96,43 @@ const CreatePet = (props) => {
           required
           onChange={handleChange}
         />
+        <label>Age: </label>
         <input
           className="input-age"
-          placeholder="age"
+          placeholder="Age (in human years)"
           value={pet.age}
           name="age"
           required
           onChange={handleChange}
         />
+                <label>Breed: </label>
+
         <input
           className="input-breed"
-          placeholder="breed"
+          placeholder="Breed (All are welcome!)"
           value={pet.breed}
           name="breed"
           required
           onChange={handleChange}
         />
-        <select className="input-type">
-          <option className="type-input" value="form-dropdown">Animal Type</option>
-          <option className="type-input" value="perro">Perro</option>
-          <option className="type-input" value="gato">Gato</option>
-          <option className="type-input" value="canejo">Canejo</option>
-          </select>
+                        <label>Animal Type: </label>
+
+          <input
+          className="input-type"
+          placeholder="Animal Type"
+          value={pet.type}
+          name="type"
+          required
+          onChange={handleChange}
+        />
+
+        {/* <select className="input-type" value={props.value} onSelect={handleSelect}>
+          <option className="classname" value="drop-down">Search by type</option>
+          <option className="type-input" value="doggo">Doggo</option>
+          <option className="type-input" value="kitty">Kitty</option>
+          <option className="type-input" value="bunny">Bunny</option>
+          
+          </select> */}
         <button type="submit" className="submit-button">
           Submit
         </button>

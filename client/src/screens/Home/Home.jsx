@@ -1,4 +1,5 @@
-import Layout from "../../components/Shared/Layout/Layout";
+import Layout from "../../components/Shared/Layout/Layout"
+import React from 'react';
 
 function Home(props) {
   return (
