@@ -54,6 +54,7 @@ const CreatePet = (props) => {
           name="price"
           required
           onChange={handleChange}
+          
         />
         <textarea
           className="input-textarea-description"
@@ -96,14 +97,12 @@ const CreatePet = (props) => {
           required
           onChange={handleChange}
         />
-        <input
-          className="input-type"
-          placeholder="type"
-          value={pet.type}
-          name="type"
-          required
-          onChange={handleChange}
-        />
+        <select className="input-type">
+          <option className="type-input" value="form-dropdown">Animal Type</option>
+          <option className="type-input" value="perro">Perro</option>
+          <option className="type-input" value="gato">Gato</option>
+          <option className="type-input" value="canejo">Canejo</option>
+          </select>
         <button type="submit" className="submit-button">
           Submit
         </button>
