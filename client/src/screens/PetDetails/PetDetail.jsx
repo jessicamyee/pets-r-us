@@ -37,7 +37,7 @@ const PetDetail = (props) => {
           <div className="detail-breed">Breed:{pet.breed}</div>
           <div className="detail-age">Age:{pet.age}</div>
           <div className="detail-price"> Adoption Fee:{`${pet.price}`}</div>
-          <a href={pet.link} target="_blank">
+          <a href={pet.link} rel=“noreferrer” target="_blank">
             Learn More about me
           </a>
           {props.user ? (
