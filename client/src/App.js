@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Home from "./screens/Home/Home";
-// import AllPets from "./screens/AllPets/AllPets";
+import AllPets from "./screens/AllPets/AllPets";
 import CreatePet from "./screens/CreatePet/CreatePet";
 import EditPet from "./screens/EditPet/EditPet";
 import PetDetail from "./screens/PetDetails/PetDetail";
@@ -41,9 +41,9 @@ const App = () => {
         <Route path="/sign-out">
           <SignOut setUser={setUser} clearUser={clearUser} />
         </Route>
-        {/* <Route exact path="/pets">
+        <Route exact path="/pets">
           <AllPets user={user} />
-        </Route> */}
+        </Route>
         <Route path="/add-pet">
           {user ? <CreatePet user={user} /> : <Redirect to="/sign-up" />}
         </Route>
