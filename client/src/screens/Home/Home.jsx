@@ -1,6 +1,4 @@
-
-
-import Layout from "../../components/Shared/Layout/Layout"
+import Layout from "../../components/Shared/Layout/Layout";
 
 function Home(props) {
   return (
