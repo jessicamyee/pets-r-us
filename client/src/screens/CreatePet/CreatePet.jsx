@@ -50,7 +50,7 @@ const CreatePet = (props) => {
         <input
           className="input-price"
           placeholder="Adoption Fee"
-          value={pet.price}
+          value={`${pet.price}`}
           name="price"
           required
           onChange={handleChange}
@@ -58,7 +58,7 @@ const CreatePet = (props) => {
         />
         <textarea
           className="input-textarea-description"
-          rows={10}
+          rows={5}
           placeholder="Description"
           value={pet.description}
           name="description"

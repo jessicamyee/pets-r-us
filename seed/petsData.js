@@ -9,7 +9,7 @@ const main = async () => {
       name: "Charlie",
       breed: "Belgian Shepherd",
       age: "3 months",
-      price: "$2,500",
+      price: "2,500",
       link: "https://underworldkennels.com/product/belgian-malinois-puppy/",
       description:
         "The smart, confident, and versatile Belgian Malinois is a world-class worker who forges an unbreakable bond with his human partner. To deny a Mal activity and the pleasure of your company is to deprive him of his very reasons for being.",
@@ -21,8 +21,8 @@ const main = async () => {
       name: "Mittens",
       breed: "Ragdoll",
       age: "4 years",
-      price: "$3,000",
-      link: "http://www.ragdoll-breeder.com/gallery.htm",
+      price: "3,000",
+      link: "http://www.ragdoll-breeder.com/gallery.html",
       description:
         "The Ragdoll is a well-balanced cat with no extreme features. They are a medium to large, moderately longhaired, blue-eyed pointed cats. The point markings may be covered by a range of white overlay patterns. Ragdolls are slow maturing, reaching full coat and color at about three years of age. The Ragdoll is an affectionate and intelligent cat, giving the impression of graceful movement and subdued power, striking in appearance",
       imgURL: "http://www.ragdoll-breeder.com/graphics/gallery_files/boots.jpg",
@@ -32,7 +32,7 @@ const main = async () => {
       name: "Blue",
       breed: "Chow-chow",
       age: "6 years",
-      price: "$500",
+      price: "500",
       link:
         "https://www.petfinder.com/dog/blue-48885469/me/biddeford/when-the-going-gets-ruff-animal-rescue-me168/",
       description:

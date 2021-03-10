@@ -36,18 +36,24 @@ const PetDetail = (props) => {
           <div className="detail-name">{pet.name}</div>
           <div className="detail-breed">Breed:{pet.breed}</div>
           <div className="detail-age">Age:{pet.age}</div>
-          <div className="detail-price"> Adoption Fee:${`${pet.price}`}</div>
-          <div className="detail-link">{pet.link}</div>
-          <div className="button-container">
-            <button className="edit-button">
-              <Link className="edit-link" to={`/pets/${pet._id}/edit`}>
-                Edit Details
-              </Link>
-            </button>
-            <button className="delete-button" onClick={handleDelete}>
-              Delete
-            </button>
-          </div>
+          <div className="detail-price"> Adoption Fee:{`${pet.price}`}</div>
+          <a href={pet.link} target="_blank">
+            Learn More about me
+          </a>
+          {props.user ? (
+            <>
+              <div className="button-container">
+                <button className="edit-button">
+                  <Link className="edit-link" to={`/pets/${pet._id}/edit`}>
+                    Edit Details
+                  </Link>
+                </button>
+                <button className="delete-button" onClick={handleDelete}>
+                  Delete
+                </button>
+              </div>
+            </>
+          ) : null}
         </div>
         <div className="detail-description">{pet.description}</div>
       </div>
