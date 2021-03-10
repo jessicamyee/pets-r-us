@@ -1,5 +1,5 @@
 
-// import './Pet.css'
+import './Pet.css'
 import { Link } from 'react-router-dom'
 
 const Pet = (props) => {
@@ -8,7 +8,7 @@ const Pet = (props) => {
       <Link to={`/pets/${props._id}`}>
         <div>
           <div className="all-name">{props.name}</div>
-          <div className="all-price">{props.price}</div>
+          <div className="all-price">${props.price}</div>
           <img className="all-imgURL"
             src={props.imgURL}
             alt={props.breed} />
