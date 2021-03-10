@@ -40,16 +40,20 @@ const PetDetail = (props) => {
           <a href={pet.link} target="_blank">
             Learn More about me
           </a>
-          <div className="button-container">
-            <button className="edit-button">
-              <Link className="edit-link" to={`/pets/${pet._id}/edit`}>
-                Edit Details
-              </Link>
-            </button>
-            <button className="delete-button" onClick={handleDelete}>
-              Delete
-            </button>
-          </div>
+          {props.user ? (
+            <>
+              <div className="button-container">
+                <button className="edit-button">
+                  <Link className="edit-link" to={`/pets/${pet._id}/edit`}>
+                    Edit Details
+                  </Link>
+                </button>
+                <button className="delete-button" onClick={handleDelete}>
+                  Delete
+                </button>
+              </div>
+            </>
+          ) : null}
         </div>
         <div className="detail-description">{pet.description}</div>
       </div>
