@@ -22,7 +22,7 @@ const AllPets = (props) => {
 
   const handleSearch = (event) => {
     const newQueriedPets = allPets.filter((pet) =>
-      pet.title.toLowerCase().includes(event.target.value.toLowerCase())
+      pet.type.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setQueriedPets(newQueriedPets);
   };
