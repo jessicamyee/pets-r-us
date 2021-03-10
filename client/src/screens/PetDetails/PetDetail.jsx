@@ -34,9 +34,9 @@ const PetDetail = (props) => {
         <img className="pet-detail-image" src={pet.imgURL} alt={pet.name} />
         <div className="detail">
           <div className="detail-name">{pet.name}</div>
-          <div className="detail-breed">Breed:{pet.breed}</div>
-          <div className="detail-age">Age:{pet.age}</div>
-          <div className="detail-price"> Adoption Fee:{`${pet.price}`}</div>
+          <div className="detail-breed">Breed: {pet.breed}</div>
+          <div className="detail-age">Age: {pet.age}</div>
+          <div className="detail-price"> Adoption Fee: ${`${pet.price}`}</div>
           <a href={pet.link} target="_blank">
             Learn More about me
           </a>
