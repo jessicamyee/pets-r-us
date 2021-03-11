@@ -34,7 +34,7 @@ const alwaysOptions = (
 
 const MainNav = ({ user }) => {
   return (
-    <Navbar className="nav-section" expand="lg">
+    <Navbar className="nav-section" expand="lg" className="sticky-top">
       <Navbar.Brand href="/" className="page-logo">
         Pets-R-Us
       </Navbar.Brand>
