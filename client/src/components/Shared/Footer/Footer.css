@@ -1,15 +1,17 @@
 footer {
-  position: fixed;
+  display: flex;
+  flex-direction: row;
+  /* position: fixed;
    left: 0;
    bottom: 0;
-   width: 100%;
+   width: 100%; */
   background-color: #233D4D;
 }
 
-.person-footer{
+/* .person-footer{
   display: inline-block;
   margin: 5px 20px;
-}
+} */
 
 
 .member-name{
