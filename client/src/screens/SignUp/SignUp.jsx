@@ -67,7 +67,7 @@ const SignUp = (props) => {
         <h3 className="sign-up-header">Sign-Up For An Account</h3>
         <div className="signup-fields">
           <form onSubmit={onSignUp}>
-            <div className ="input-field">
+            <div className="input-field">
               <input
                 required
                 type="email"
@@ -78,7 +78,7 @@ const SignUp = (props) => {
               />
             </div>
 
-            <div className ="input-field">
+            <div className="input-field">
               <input
                 required
                 type="text"
@@ -89,7 +89,7 @@ const SignUp = (props) => {
               />
             </div>
 
-            <div className ="input-field">
+            <div className="input-field">
               <input
                 required
                 name="password"
@@ -100,7 +100,7 @@ const SignUp = (props) => {
               />
             </div>
 
-            <div className ="input-field">
+            <div className="input-field">
               <input
                 required
                 name="passwordConfirmation"

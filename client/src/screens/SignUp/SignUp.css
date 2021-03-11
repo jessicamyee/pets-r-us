@@ -1,6 +1,9 @@
 .form-container-sign-up{
   background-color: #82B0A2;
 
+  /* Hacky for now */
+  height: 100%;
+
 }
 
 .sign-up-header{
@@ -28,9 +31,10 @@ input{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #FFFFFF;
-  /* margin-right: 300px;
-  margin-left: 300px; */
+  background-color: white;
+  width: 70%;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 .signup-btn{
