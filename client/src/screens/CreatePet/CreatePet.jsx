@@ -46,6 +46,8 @@ const CreatePet = (props) => {
   return (
     <Layout user={props.user}>
       {/* <Parent /> */}
+      <div className="create-form-header">Welcome! Witty Header Goes Here!</div>
+      <p className="create-form-instructions">On this page, please fill out our easy to use to add your animal to our database! All are welcome.</p>
       <form className="create-form" onSubmit={handleSubmit}>
         <label>Name: </label>
 
