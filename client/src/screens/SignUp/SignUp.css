@@ -41,3 +41,7 @@ input{
   background-color: #233D4D;
   color: #FFFFFF;
 }
+
+.signup-btn:hover {
+  transform:scale(1.1);
+}
