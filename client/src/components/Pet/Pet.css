@@ -1,4 +1,69 @@
+
+a {
+  text-decoration: none;
+}
+
+.all-pets-container-search {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.all-pets-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.all-pet-card {
+  display:grid;
+  grid-template-areas: 
+  "I"
+  "N"
+  "B"
+  "S"
+  ;
+  width:305px;
+  height: 450px;
+  border: 1px solid #233D4D;
+  /* border: 3px solid red; */
+  border-radius: 3px;
+  padding: 1vw;
+  margin-bottom: 10px;
+}
+
 .all-imgURL {
-  max-width: 300px;
-  max-height: 300px;
+  grid-area: I;
+  width: 300px;
+  height: 300px;
+  /* setting height instead of max-height distorts images */
+  border-radius: 3px;
+}
+
+.all-name {
+  grid-area: N;
+  font-size:40px;
+  text-decoration: none;
+  padding:10px;
+  justify-self: center;
+  color: #233D4D;
+}
+
+.all-breed {
+  grid-area: B;
+  text-decoration: none;
+  justify-self: center;
+  margin-bottom: 10px;
+  color: #233D4D;
+}
+
+.more {
+  grid-area: S;
+  text-decoration: none;
+  justify-self: center;
+  color: #233D4D;
+}
+
+:visited {
+  color: black;
+  text-decoration: none;
 }
