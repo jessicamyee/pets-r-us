@@ -1,6 +1,10 @@
 .nav-section {
+  display: flex;
+}
+
+.sticky-top{
+  position: sticky;
   background-color: #324652;
-  display: flex !important;
 }
 
 .page-logo{
