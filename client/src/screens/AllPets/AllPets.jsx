@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-// import "./AllPets.css";
+import "./AllPets.css";
 import Pet from "../../components/Pet/Pet"
 import Search from "../../components/Search/Search";
 import Layout from "../../components/Shared/Layout/Layout";
@@ -33,7 +33,7 @@ const AllPets = (props) => {
     <Pet
       _id={pet._id}
       name={pet.name}
-      price={pet.price}
+      breed={pet.breed}
       imgURL={pet.imgURL}
       key={index}
     />
@@ -42,8 +42,11 @@ const AllPets = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="all-pets-container">
-        <Search onSubmit={handleSubmit} onChange={handleSearch} />
+      <div className="all-pets-container-search">
+        <Search
+          className="search-bar"
+          onSubmit={handleSubmit}
+          onChange={handleSearch} />
         <div className="pets">
           {petsJSX}
         </div>
