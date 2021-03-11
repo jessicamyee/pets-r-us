@@ -51,7 +51,11 @@ const SignUp = (props) => {
         </button>
       );
     } else {
-      return <button type="submit">Sign Up</button>;
+      return (
+        <button type="submit" className="signup-btn">
+          Sign Up
+        </button>
+      );
     }
   };
 
@@ -59,47 +63,56 @@ const SignUp = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="form-container">
-        <h3>Sign Up</h3>
-        <form onSubmit={onSignUp}>
-          <label>Username</label>
-          <input
-            required
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Enter username"
-            onChange={handleChange}
-          />
-          <label>Email address</label>
-          <input
-            required
-            type="email"
-            name="email"
-            value={email}
-            placeholder="Enter email"
-            onChange={handleChange}
-          />
-          <label>Password</label>
-          <input
-            required
-            name="password"
-            value={password}
-            type="password"
-            placeholder="Password"
-            onChange={handleChange}
-          />
-          <label>Password Confirmation</label>
-          <input
-            required
-            name="passwordConfirmation"
-            value={passwordConfirmation}
-            type="password"
-            placeholder="Confirm Password"
-            onChange={handleChange}
-          />
-          {renderError()}
-        </form>
+      <div className="form-container-sign-up">
+        <h3 className="sign-up-header">Sign-Up For An Account</h3>
+        <div className="signup-fields">
+          <form onSubmit={onSignUp}>
+            <div className ="input-field">
+              <input
+                required
+                type="email"
+                name="email"
+                value={email}
+                placeholder="Email Address"
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className ="input-field">
+              <input
+                required
+                type="text"
+                name="username"
+                value={username}
+                placeholder="Create Username"
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className ="input-field">
+              <input
+                required
+                name="password"
+                value={password}
+                type="password"
+                placeholder="Create Password"
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className ="input-field">
+              <input
+                required
+                name="passwordConfirmation"
+                value={passwordConfirmation}
+                type="password"
+                placeholder="Confirm Password"
+                onChange={handleChange}
+              />
+            </div>
+            {renderError()}
+          </form>
+        </div>
       </div>
     </Layout>
   );

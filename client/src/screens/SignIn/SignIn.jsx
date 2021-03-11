@@ -51,7 +51,7 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button type="submit">Sign In</button>;
+      return <button type="submit" className="signin-btn" >Sign In</button>;
     }
   };
 
@@ -59,29 +59,34 @@ const SignIn = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="form-container">
-        <h3>Sign In</h3>
-        <form onSubmit={onSignIn}>
-          <label>Username</label>
-          <input
-            required
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Enter Username"
-            onChange={handleChange}
-          />
-          <label>Password</label>
-          <input
-            required
-            name="password"
-            value={password}
-            type="password"
-            placeholder="Password"
-            onChange={handleChange}
-          />
-          {renderError()}
-        </form>
+      <div className="form-container-sign-in">
+        <h3 className="sign-in-header">Sign-in to your Account</h3>
+        <div className="signin-fields">
+          <form onSubmit={onSignIn}>
+            <div className="input-field">
+              <input
+                required
+                type="text"
+                name="username"
+                value={username}
+                placeholder="Username"
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="input-field">
+              <input
+                required
+                name="password"
+                value={password}
+                type="password"
+                placeholder="Password"
+                onChange={handleChange}
+              />
+            </div>
+            {renderError()}
+          </form>
+        </div>
       </div>
     </Layout>
   );
