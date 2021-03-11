@@ -15,6 +15,7 @@ const CreatePet = (props) => {
     description: "",
     imgURL: "",
     type: "",
+    gender: "",
   });
 
   const [isCreated, setCreated] = useState(false);
@@ -58,7 +59,6 @@ const CreatePet = (props) => {
           onChange={handleChange}
         />
         <label>Adoption Fee: </label>
-
         <input
           className="input-price"
           // placeholder="Adoption Fee (USD)"
@@ -68,7 +68,6 @@ const CreatePet = (props) => {
           onChange={handleChange}
         />
         <label>Pet Description: </label>
-
         <textarea
           className="input-textarea-description"
           rows={5}
@@ -79,7 +78,6 @@ const CreatePet = (props) => {
           onChange={handleChange}
         />
         <label>Image Link: </label>
-
         <input
           className="input-image-link"
           // placeholder="Image Link"
