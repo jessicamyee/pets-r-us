@@ -114,9 +114,11 @@ const EditPet = (props) => {
             required
             onChange={handleChange}
           />
-          <button type="submit" className="save-button">
-            Save Changes
-          </button>
+          <div className="save-button">
+            <button type="submit" className="edit-save-button">
+              Save Changes
+            </button>
+          </div>
         </form>
       </div>
     </Layout>

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 80px;
+  padding-left: 15%;
   background-color: #cddcdc;
   background-image: radial-gradient(
       at 50% 100%,
@@ -59,7 +60,7 @@
 }
 
 .pet-detail-image {
-  width: 300px;
+  width: 400px;
   height: 300px;
   object-fit: cover;
   padding: 0 50px;
@@ -105,6 +106,11 @@
   transition: 0.2s ease-in-out;
 }
 
+.paw-like {
+  font-size: 50px;
+  color: #233d4c;
+}
+
 .det-des-heading {
   font-family: "Pacifico", cursive;
   font-size: 22px;
@@ -119,4 +125,5 @@
   justify-content: center;
   max-width: 70vw;
   font-family: "Montserrat";
+  font-size: 20px;
 }
