@@ -1,0 +1,27 @@
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.horizontalSlider___281Ls, 
+.carousel__slider, 
+.carousel__slider--horizontal {
+  width: 700px;
+  height: 400px;
+  justify-content: center;
+}
+
+
+.buttonBack___1mlaL,
+.carousel__back-button {
+  order: -1;
+}
+
+.carousel__dot-group {
+  align-self: flex-end;
+}
+/* .carousel__dot {
+
+} */
