@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Redirect } from "react-router-dom";
 import Layout from "../../components/Shared/Layout/Layout";
 import { getPet, updatePet } from "../../services/pets";
-// import "./EditPet.css";
+import "./EditPet.css";
 
 const EditPet = (props) => {
   const [pet, setPet] = useState({
@@ -61,47 +61,49 @@ const EditPet = (props) => {
           </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
-          <input
-            className="input-name"
-            placeholder="Pet Name"
-            value={pet.name}
-            name="name"
-            required
-            autoFocus
-            onChange={handleChange}
-          />
-          <input
-            className="input-breed"
-            placeholder="Breed"
-            value={pet.breed}
-            name="breed"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input-age"
-            placeholder="Age"
-            value={pet.age}
-            name="age"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input-price"
-            placeholder="Adoption Fee"
-            value={pet.price}
-            name="price"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input-link"
-            placeholder="Adoption Link"
-            value={pet.link}
-            name="link"
-            required
-            onChange={handleChange}
-          />
+          <div className="edit-top">
+            <input
+              className="input-name"
+              placeholder="Pet Name"
+              value={pet.name}
+              name="name"
+              required
+              autoFocus
+              onChange={handleChange}
+            />
+            <input
+              className="input-breed"
+              placeholder="Breed"
+              value={pet.breed}
+              name="breed"
+              required
+              onChange={handleChange}
+            />
+            <input
+              className="input-age"
+              placeholder="Age"
+              value={pet.age}
+              name="age"
+              required
+              onChange={handleChange}
+            />
+            <input
+              className="input-price"
+              placeholder="Adoption Fee"
+              value={pet.price}
+              name="price"
+              required
+              onChange={handleChange}
+            />
+            <input
+              className="input-link"
+              placeholder="Adoption Link"
+              value={pet.link}
+              name="link"
+              required
+              onChange={handleChange}
+            />
+          </div>
           <textarea
             className="textarea-description"
             rows={10}
@@ -112,9 +114,11 @@ const EditPet = (props) => {
             required
             onChange={handleChange}
           />
-          <button type="submit" className="save-button">
-            Save Changes
-          </button>
+          <div className="save-button">
+            <button type="submit" className="edit-save-button">
+              Save Changes
+            </button>
+          </div>
         </form>
       </div>
     </Layout>

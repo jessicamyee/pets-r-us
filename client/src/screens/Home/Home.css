@@ -1,0 +1,33 @@
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.horizontalSlider___281Ls, 
+.carousel__slider, 
+.carousel__slider--horizontal {
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+}
+
+
+.buttonBack___1mlaL,
+.carousel__back-button {
+  order: -1;
+  border: none;
+  background-color: white;
+  font-size: 50px;
+}
+.buttonNext___2mOCa,
+.carousel__next-button {
+  border: none;
+  background-color:white;
+  font-size: 50px;
+}
+
+.carousel__dot-group {
+  align-self: flex-end;
+}

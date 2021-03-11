@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../../components/Shared/Layout/Layout";
 import { getPet, deletePet } from "../../services/pets";
 import { useParams, Link, useHistory } from "react-router-dom";
-// import "./PetDetail.css";
+import "./PetDetail.css";
 
 const PetDetail = (props) => {
   const [pet, setPet] = useState(null);
@@ -31,31 +31,42 @@ const PetDetail = (props) => {
   return (
     <Layout user={props.user}>
       <div className="pet-detail">
-        <img className="pet-detail-image" src={pet.imgURL} alt={pet.name} />
-        <div className="detail">
-          <div className="detail-name">{pet.name}</div>
-          <div className="detail-breed">Breed: {pet.breed}</div>
-          <div className="detail-age">Age: {pet.age}</div>
-          <div className="detail-price"> Adoption Fee: ${`${pet.price}`}</div>
-          <a href={pet.link} target="_blank">
-            Learn More about me
-          </a>
-          {props.user ? (
-            <>
-              <div className="button-container">
-                <button className="edit-button">
-                  <Link className="edit-link" to={`/pets/${pet._id}/edit`}>
-                    Edit Details
-                  </Link>
-                </button>
-                <button className="delete-button" onClick={handleDelete}>
-                  Delete
-                </button>
-              </div>
-            </>
-          ) : null}
+        <div className="detail-top">
+          <img className="pet-detail-image" src={pet.imgURL} alt={pet.name} />
+          <div className="detail">
+            <div className="detail-name">{pet.name}</div>
+            <div className="detail-breed">Breed: {pet.breed}</div>
+            <div className="detail-age">Age: {pet.age}</div>
+            <div className="detail-price"> Adoption Fee: ${`${pet.price}`}</div>
+            <a
+              href={pet.link}
+              rel="noreferrer"
+              target="_blank"
+              className="detail-link"
+            >
+              Click here to learn more about me
+            </a>
+            {props.user ? (
+              <>
+                <div className="button-container">
+                  <button className="edit-button">
+                    <Link className="edit-link" to={`/pets/${pet._id}/edit`}>
+                      Edit Details
+                    </Link>
+                  </button>
+                  <button className="delete-button" onClick={handleDelete}>
+                    Delete
+                  </button>
+                  <div className="paw-like">&#128062;</div>
+                </div>
+              </>
+            ) : null}
+          </div>
         </div>
-        <div className="detail-description">{pet.description}</div>
+        <div className="detail-description">
+          <span className="det-des-heading">Meet {pet.name} :</span>{" "}
+          {pet.description}
+        </div>
       </div>
     </Layout>
   );
