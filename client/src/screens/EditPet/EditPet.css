@@ -1,0 +1,84 @@
+.pet-edit {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  background-color: #c2d8d8;
+  background-image: radial-gradient(
+      at 50% 100%,
+      rgba(83, 2, 2, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+  background-blend-mode: screen, overlay;
+}
+
+.edit-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: fit-content;
+  margin-left: 100px;
+}
+
+.edit-product-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding-bottom: 25px;
+}
+
+.edit-input-image-link {
+  background-color: #cddcdc;
+  width: 300px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-evenly;
+  margin-left: 100px;
+}
+
+.input-name,
+.input-breed,
+.input-age,
+.input-price,
+.input-link {
+  background-color: #cddcdc;
+  width: 300px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.textarea-description {
+  background-color: #cddcdc;
+  width: 60vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.save-button {
+  width: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #274c77;
+  color: #e7ecef;
+  font-size: 18px;
+  border: 2px solid #274c77;
+  border-radius: 4px;
+  align-self: center;
+  width: 70px;
+}
