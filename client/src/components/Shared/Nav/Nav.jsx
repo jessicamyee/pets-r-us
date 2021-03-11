@@ -1,51 +1,52 @@
-// import './Nav.css'
+import "./Nav.css";
+import { Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 const authenticatedOptions = (
   <>
-    <NavLink className="link" to="/add-pet">
+    <Nav.Link as={NavLink} to="/add-pet" className="nav-tabs">
       Add a Pet
-    </NavLink>
-    <NavLink className="link" to="/sign-out">
+    </Nav.Link>
+    <Nav.Link className="nav-tabs" href="/sign-out">
       Sign Out
-    </NavLink>
+    </Nav.Link>
   </>
 );
 
 const unauthenticatedOptions = (
   <>
-    <NavLink className="link" to="/sign-in">
+    <Nav.Link className="nav-tabs" href="/sign-in">
       Sign In
-    </NavLink>
-    <NavLink className="link" to="/sign-up">
+    </Nav.Link>
+    <Nav.Link className="nav-tabs" href="/sign-up">
       Sign Up
-    </NavLink>
+    </Nav.Link>
   </>
 );
 
 const alwaysOptions = (
   <>
-    <NavLink className="link" to="/pets">
+    <Nav.Link className="nav-tabs" href="/pets">
       Adoptable Pets
-    </NavLink>
+    </Nav.Link>
   </>
 );
 
-const Nav = ({ user }) => {
+const MainNav = ({ user }) => {
   return (
-    <nav>
-      <div className="nav">
-        <NavLink className="logo" to="/">
-          Pets-R-Us
-        </NavLink>
-        <div className="links">
-          {user && <div className="link welcome">Welcome, {user.username}</div>}
+    <Navbar className="nav-section" expand="lg">
+      <Navbar.Brand href="/" className="page-logo">
+        Pets-R-Us
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav>
+          {user && <div className="welcome-msg">Welcome, {user.username}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
-        </div>
-      </div>
-    </nav>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
-
-export default Nav;
+export default MainNav;
