@@ -63,7 +63,7 @@ const SignUp = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="form-container">
+      <div className="form-container-sign-up">
         <h3 className="sign-up-header">Sign-Up For An Account</h3>
         <div className="signup-fields">
           <form onSubmit={onSignUp}>
