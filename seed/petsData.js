@@ -44,7 +44,7 @@ const main = async () => {
       description:
         "1yo with vaccinations up to date, spayed / neutered. He has been in the shelter for three months. This little guy is a bit nervous but is very ready for that to change!",
       imgURL:
-        "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50829869/2/?bust=1615479317&width=1080",
+        "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50176975/6/?bust=1615350995&width=1080",
       type: "Cat",
     },
     {
@@ -73,7 +73,7 @@ const main = async () => {
         "All of our adoptable rabbits are spayed/neutered, health-checked by rabbit-savvy vets and fostered in private homes.",
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50728140/1/?bust=1615344492&width=1080",
-      type: "Rabbit",
+      type: "Bunny",
     },
   ];
 

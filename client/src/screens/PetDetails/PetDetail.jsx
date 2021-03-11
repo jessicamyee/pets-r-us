@@ -37,7 +37,7 @@ const PetDetail = (props) => {
             <div className="detail-name">{pet.name}</div>
             <div className="detail-breed">Breed: {pet.breed}</div>
             <div className="detail-age">Age: {pet.age}</div>
-            <div className="detail-price"> Adoption Fee:{`${pet.price}`}</div>
+            <div className="detail-price"> Adoption Fee: ${`${pet.price}`}</div>
             <a
               href={pet.link}
               rel="noreferrer"
@@ -57,13 +57,14 @@ const PetDetail = (props) => {
                   <button className="delete-button" onClick={handleDelete}>
                     Delete
                   </button>
+                  <div className="paw-like">&#128062;</div>
                 </div>
               </>
             ) : null}
           </div>
         </div>
         <div className="detail-description">
-          <span className="det-des-heading">About {pet.name}:</span>{" "}
+          <span className="det-des-heading">Meet {pet.name} :</span>{" "}
           {pet.description}
         </div>
       </div>
