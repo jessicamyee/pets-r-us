@@ -93,7 +93,7 @@ export default class MasterForm extends React.Component {
         <h1>Add your animal to our community!</h1>
         <p>Step {this.state.currentStep} </p>
 
-        <form onSubmit={this.handleSubmit}>
+        <form className="submission-form" onSubmit={this.handleSubmit}>
 
           <Step1
             currentStep={this.state.currentStep}
