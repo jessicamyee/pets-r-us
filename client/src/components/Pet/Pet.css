@@ -30,12 +30,11 @@
   margin-bottom: 10px;
 }
 
-
 .all-imgURL {
   grid-area: I;
   width: 300px;
   height: 300px;
-  /* setting height instead of max-height distorts images */
+  object-fit: cover;
   border-radius: 3px;
 }
 
