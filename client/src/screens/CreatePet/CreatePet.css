@@ -1,7 +1,63 @@
 .create-form {
   display: flex;
   flex-direction: column;
-  margin-left: 150px;
-  margin-right: 150px;
+  /* margin-left: 150px;
+  margin-right: 150px; */
   margin-top: 50px;
+  margin-bottom: 120px;
+  /* background-color: #233D4D; */
+
+}
+
+.input-name {
+  max-width: 350px;
+  margin-bottom: 10px;
+}
+
+.input-price {
+  max-width: 350px;
+}
+
+.input-textarea-description {
+  max-width: 700px;
+}
+
+.input-image-link {
+  max-width: 350px;
+
+}
+
+.input-adoption-link {
+  max-width: 350px;
+
+}
+
+.input-age {
+  max-width: 175px;
+}
+
+.input-breed {
+  max-width: 175px;
+}
+
+.animal-type {
+  max-width: 175px;
+}
+
+.submit-button {
+  max-width: 100px;
+  background-color: #233D4D;
+  color: whitesmoke;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.submit-button:hover {
+  max-width: 100px;
+  background-color: whitesmoke;
+  color: #233D4D;
+}
+
+label {
+  color: #233D4D;
+
 }

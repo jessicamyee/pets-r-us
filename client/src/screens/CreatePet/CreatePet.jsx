@@ -3,6 +3,7 @@ import "./CreatePet.css";
 import Layout from "../../components/Shared/Layout/Layout";
 import { Redirect } from "react-router-dom";
 import { createPet } from "../../services/pets";
+// import Parent from "./Parent";
 
 const CreatePet = (props) => {
   const [pet, setPet] = useState({
@@ -43,35 +44,35 @@ const CreatePet = (props) => {
   }
   return (
     <Layout user={props.user}>
+      {/* <Parent /> */}
       <form className="create-form" onSubmit={handleSubmit}>
-      <label>Name: </label>
+        <label>Name: </label>
 
         <input
           className="input-name"
-          placeholder="Name"
+          // placeholder="Name"
           value={pet.name}
           name="name"
           required
           autoFocus
           onChange={handleChange}
         />
-                <label>Adoption Fee: </label>
+        <label>Adoption Fee: </label>
 
         <input
           className="input-price"
-          placeholder="Adoption Fee (USD)"
+          // placeholder="Adoption Fee (USD)"
           value={pet.price}
           name="price"
           required
           onChange={handleChange}
-          
         />
-                <label>Image Description: </label>
+        <label>Pet Description: </label>
 
         <textarea
           className="input-textarea-description"
           rows={5}
-          placeholder="Description"
+          // placeholder="Description"
           value={pet.description}
           name="description"
           required
@@ -81,16 +82,16 @@ const CreatePet = (props) => {
 
         <input
           className="input-image-link"
-          placeholder="Image Link"
+          // placeholder="Image Link"
           value={pet.imgURL}
           name="imgURL"
           required
           onChange={handleChange}
         />
-                <label>Adoption Link </label>
+        <label>Adoption Link: </label>
         <input
           className="input-adoption-link"
-          placeholder="Adoption Link"
+          // placeholder="Adoption Link"
           value={pet.link}
           name="link"
           required
@@ -99,27 +100,27 @@ const CreatePet = (props) => {
         <label>Age: </label>
         <input
           className="input-age"
-          placeholder="Age (in human years)"
+          // placeholder="Age (in human years)"
           value={pet.age}
           name="age"
           required
           onChange={handleChange}
         />
-                <label>Breed: </label>
+        <label>Breed: </label>
 
         <input
           className="input-breed"
-          placeholder="Breed (All are welcome!)"
+          // placeholder="Breed (All are welcome!)"
           value={pet.breed}
           name="breed"
           required
           onChange={handleChange}
         />
-                        <label>Animal Type: </label>
+        <label>Animal Type: </label>
 
-          <input
-          className="input-type"
-          placeholder="Animal Type"
+        <input
+          className="animal-type"
+          // placeholder="Animal Type"
           value={pet.type}
           name="type"
           required
