@@ -1,7 +1,14 @@
 footer {
-  display: flex;
-  flex-shrink: 0;
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
   background-color: #233D4D;
+}
+
+.person-footer{
+  display: inline-block;
+  margin: 5px 20px;
 }
 
 
@@ -15,7 +22,3 @@ footer {
   width:20px;
 }
 
-
-/* .fa {
-  padding: 0px 0px 20px;
-} */
