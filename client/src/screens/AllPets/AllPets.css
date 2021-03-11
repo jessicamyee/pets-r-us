@@ -1,0 +1,9 @@
+.pets {
+  /* display:flex; */
+  /* width: 335px; */
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: auto;
+  /* border: 2px solid green; */
+  justify-content: space-evenly;
+}
