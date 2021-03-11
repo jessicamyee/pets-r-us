@@ -51,6 +51,7 @@ const main = async () => {
       name: "Blue",
       breed: "Chow-chow",
       age: "6 years",
+      gender: "Male",
       price: "500",
       link:
         "https://www.petfinder.com/dog/blue-48885469/me/biddeford/when-the-going-gets-ruff-animal-rescue-me168/",
