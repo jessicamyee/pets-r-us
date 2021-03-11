@@ -88,12 +88,22 @@ const CreatePet = (props) => {
           required
           onChange={handleChange}
         />
+        
         <label>Adoption Link: </label>
         <input
           className="input-adoption-link"
           // placeholder="Adoption Link"
           value={pet.link}
           name="link"
+          required
+          onChange={handleChange}
+        />
+                <label>Gender: </label>
+        <input
+          className="input-gender"
+          // placeholder="Age (in human years)"
+          value={pet.gender}
+          name="gender"
           required
           onChange={handleChange}
         />

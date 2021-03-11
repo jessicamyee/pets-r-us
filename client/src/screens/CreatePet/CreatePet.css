@@ -1,12 +1,18 @@
 .create-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* margin-left: 150px;
   margin-right: 150px; */
   margin-top: 50px;
   margin-bottom: 120px;
   /* background-color: #233D4D; */
 
+}
+
+.input-gender {
+  max-width: 350px;
+  margin-bottom: 10px;
 }
 
 .input-name {
