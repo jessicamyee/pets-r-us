@@ -48,7 +48,7 @@ const CreatePet = (props) => {
       {/* <Parent /> */}
       <div className="create-pet">
       <div className="create-form-header">Welcome! Witty Header Goes Here!</div>
-      <p className="create-form-instructions">Add a Pet for Adoption</p>
+      <div className="create-form-instructions">Add a Pet for Adoption</div>
       
       <form className="create-form" onSubmit={handleSubmit}>
         <label>Name: </label>
