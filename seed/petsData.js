@@ -6,27 +6,46 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 const main = async () => {
   const pets = [
     {
-      name: "Charlie",
-      breed: "Belgian Shepherd",
-      age: "3 months",
-      price: "2,500",
-      link: "https://underworldkennels.com/product/belgian-malinois-puppy/",
+      name: "Casper",
+      breed: "American Bulldog Mix",
+      age: "5 years",
+      gender: "Male",
+      price: "350",
+      link:
+        "http://petharbor.com/detail.asp?ID=A274831&LOCATION=BSTN&searchtype=ADOPT&start=3&stylesheet=http://www.arlboston.dbrowne.net/default1.css&friends=1&samaritans=1&nosuccess=0&rows=10&imght=160&imgres=thumb&tWidth=200&view=sysadm.v_bstn&fontface=arial&fontsize=10&zip=02116&miles=100&shelterlist=%27BSTN%27,%27BSTN1%27,%27BSTN3%27&atype=&where=type_DOG",
       description:
-        "The smart, confident, and versatile Belgian Malinois is a world-class worker who forges an unbreakable bond with his human partner. To deny a Mal activity and the pleasure of your company is to deprive him of his very reasons for being.",
+        "Casper is a 5-year-old neutered male American Bulldog mix who is ready for a fresh start. Look at his handsome face and bi-color eyes! Casper is deaf, so he is looking for a special home that can accommodate his needs. Casper is looking for an adult only home with a fenced in yard, and no other animals. While owning a deaf dog may present some challenges, he is learning sign language during his visit at the shelter so his adopter will have an easier time communicating with him! Casper is so smart, and loves playing fetch SO MUCH, which makes training is a breeze with this guy! Casper takes time to warm up to people, but once he does, he loves attention and will be the perfect hangout buddy! Though Casper enjoys romping around a yard for a bit, he is quite the couch potato. Could Casper be the dog for you? This animal is currently up to date on all vaccinations, has been neutered, microchipped and been seen by our vet team. ",
       imgURL:
-        "https://underworldkennels.com/wp-content/uploads/2020/01/Belgian_Malinois_puppy-e1578952894928.png",
-      type: "Doggo",
+        "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50708836/1/?bust=1615398914&width=1080",
+      type: "Dog",
     },
     {
-      name: "Mittens",
-      breed: "Ragdoll",
-      age: "4 years",
-      price: "3,000",
-      link: "http://www.ragdoll-breeder.com/gallery.html",
+      name: "Odie",
+      breed: " Pit Bull Terrier Mix",
+      age: "7 weeks",
+      gender: "Male",
+      price: "300",
+      link:
+        "https://www.petfinder.com/dog/odie-50829869/tx/cypress/big-love-rescue-tx2426/",
       description:
-        "The Ragdoll is a well-balanced cat with no extreme features. They are a medium to large, moderately longhaired, blue-eyed pointed cats. The point markings may be covered by a range of white overlay patterns. Ragdolls are slow maturing, reaching full coat and color at about three years of age. The Ragdoll is an affectionate and intelligent cat, giving the impression of graceful movement and subdued power, striking in appearance",
-      imgURL: "http://www.ragdoll-breeder.com/graphics/gallery_files/boots.jpg",
-      type: "Kitty",
+        "Odie is a chill and sweet little boy. He likes snuggles and playing with his toys. He's a 7 week old pitbull mix and expected to be over 45lbs when full grown. He's a happy and healthy boy who's learning and exploring.",
+      imgURL:
+        "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50829869/2/?bust=1615479317&width=1080",
+      type: "Dog",
+    },
+    {
+      name: "Ollie",
+      breed: "Tabby",
+      age: "1 year",
+      gender: "Male",
+      price: "100",
+      link:
+        "https://www.petfinder.com/cat/ollie-50176975/ny/huntington/golden-paw-society-inc-ny1142/?referrer_id=43175718-802f-4330-b820-5409ad5d909e",
+      description:
+        "1yo with vaccinations up to date, spayed / neutered. He has been in the shelter for three months. This little guy is a bit nervous but is very ready for that to change!",
+      imgURL:
+        "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50829869/2/?bust=1615479317&width=1080",
+      type: "Cat",
     },
     {
       name: "Blue",
@@ -40,6 +59,20 @@ const main = async () => {
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48885469/1/?bust=1614728729&width=720",
       type: "Doggo",
+    },
+    {
+      name: "Hollis",
+      breed: "Dwarf-Mix",
+      age: "Adult",
+      gender: "Male",
+      price: "90",
+      link:
+        "https://www.petfinder.com/rabbit/hollis-50728140/ny/great-neck/long-island-rabbit-rescue-group-ny669/",
+      description:
+        "All of our adoptable rabbits are spayed/neutered, health-checked by rabbit-savvy vets and fostered in private homes.",
+      imgURL:
+        "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50728140/1/?bust=1615344492&width=1080",
+      type: "Rabbit",
     },
   ];
 

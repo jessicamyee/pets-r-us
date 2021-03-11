@@ -1,11 +1,13 @@
 import Layout from "../../components/Shared/Layout/Layout";
-import PetCards from "../../components/PetCards/PetCards"
+import CarouselProvider from "../../components/Carousel/Carousel"
+import "./Home.css"
 
 function Home(props) {
   return (
     <Layout user={props.user} >
       <div>
-        <PetCards />
+        <CarouselProvider
+        className="home-carousel"/>
       </div>
       <div className="mission">
         Text about mission here.
