@@ -1,62 +1,73 @@
-// function Step1(props) {
-//   if (props.currentStep !== 1) {
-//     return null
-//   } 
-//   return(
-//     <div className="form-group">
-//       <label htmlFor="email">Pet Name</label>
-//       <input
-//         className="form-control"
-//         id="name"
-//         name="name"
-//         type="text"
-//         placeholder="Enter pet name"
-//         value={props.name}
-//         onChange={props.handleChange}
-//         />
-//     </div>
-//   );
-// }
 
-// function Step2(props) {
-//   if (props.currentStep !== 2) {
-//     return null
-//   } 
-//   return(
-//     <div className="form-group">
-//       <label htmlFor="breed">Breed</label>
-//       <input
-//         className="form-control"
-//         id="breed"
-//         name="breed"
-//         type="text"
-//         placeholder="Enter breed"
-//         value={props.breed}
-//         onChange={props.handleChange}
-//         />
-//     </div>
-//   );
-// }
 
-// function Step3(props) {
-//   if (props.currentStep !== 3) {
-//     return null
-//   } 
-//   return(
-//     <div className="form-group">
-//       <label htmlFor="age">Age</label>
-//       <input
-//         className="form-control"
-//         id="age"
-//         name="age"
-//         type="text"
-//         placeholder="Enter age"
-//         value={props.age}
-//         onChange={props.handleChange}
-//         />      
-//     </div>
-//         );
-// }
+
+function Step1(props) {
+  if (props.currentStep !== 1) {
+    return null
+  } 
+  return(
+    <div className="form-group">
+      <label htmlFor="email">Pet Name</label>
+      <input
+        className="form-control"
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Enter pet name"
+        value={props.name}
+        onChange={props.handleChange}
+        />
+    </div>
+  );
+}
+
+function Step2(props) {
+  if (props.currentStep !== 2) {
+    return null
+  } 
+  return(
+    <div className="form-group">
+      <label htmlFor="breed">Breed</label>
+      <input
+        className="form-control"
+        id="breed"
+        name="breed"
+        type="text"
+        placeholder="Enter breed"
+        value={props.breed}
+        onChange={props.handleChange}
+        />
+    </div>
+  );
+}
+
+function Step3(props) {
+  if (props.currentStep !== 3) {
+    return null
+  } 
+  return(
+    <div className="form-group">
+      <label htmlFor="age">Age</label>
+      <input
+        className="form-control"
+        id="age"
+        name="age"
+        type="text"
+        placeholder="Enter age"
+        value={props.age}
+        onChange={props.handleChange}
+        />      
+    </div>
+        );
+}
+<button className="btn btn-success btn-block">Submit Pet</button>
+  );
+}
+
+
+
+
+
 
 // function Step4(props) {
 //   if (props.currentStep !== 4) {
@@ -152,8 +163,5 @@
 //         onChange={props.handleChange}
 //         />      
 //     </div>
-//   );
-// }
-//     <button className="btn btn-success btn-block">Submit Pet</button>
 //   );
 // }

@@ -46,8 +46,10 @@ const CreatePet = (props) => {
   return (
     <Layout user={props.user}>
       {/* <Parent /> */}
+      <div className="create-pet">
       <div className="create-form-header">Welcome! Witty Header Goes Here!</div>
-      <p className="create-form-instructions">On this page, please fill out our easy to use to add your animal to our database! All are welcome.</p>
+      <p className="create-form-instructions">Add a Pet for Adoption</p>
+      
       <form className="create-form" onSubmit={handleSubmit}>
         <label>Name: </label>
 
@@ -147,7 +149,8 @@ const CreatePet = (props) => {
         <button type="submit" className="submit-button">
           Submit
         </button>
-      </form>
+        </form>
+        </div>
     </Layout>
   );
 };
