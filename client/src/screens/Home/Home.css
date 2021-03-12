@@ -1,9 +1,13 @@
 
+.home-body {
+  /* background-color: red; */
+}
+
 .our-carousel {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   justify-items: center;
 }
 
@@ -32,6 +36,7 @@
 
 .carousel__dot-group {
   align-self: flex-end; 
+  justify-content: center;
   border: 3px solid green;
 }
 
