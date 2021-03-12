@@ -14,16 +14,17 @@ function Step3(props) {
         placeholder="Enter imgURL"
         value={props.imgURL}
         onChange={props.handleChange}
+        required
       />
 
       <input
         className="form-control"
         id="type"
         name="type"
-        textarea={500}
         placeholder="Enter Animal Type"
         value={props.type}
         onChange={props.handleChange}
+        required
       />
       <button className="submit-button">Submit</button>
     </div>

@@ -15,6 +15,7 @@ function Step1(props) {
         placeholder="Enter Pet Name"
         value={props.name}
         onChange={props.handleChange}
+        required
       />
       <input
         id="breed"
@@ -23,6 +24,7 @@ function Step1(props) {
         placeholder="Enter Breed"
         value={props.breed}
         onChange={props.handleChange}
+        required
       />
       <input
         className="form-control-a"
@@ -32,8 +34,9 @@ function Step1(props) {
         placeholder="Enter Age"
         value={props.age}
         onChange={props.handleChange}
+        required
       />
-      <select name="gender" onChange={props.handleChange} id="dropdown">
+      <select required name="gender" onChange={props.handleChange} id="dropdown">
         <option value="male">Male</option>
         <option value="female">Female</option>
         </select>

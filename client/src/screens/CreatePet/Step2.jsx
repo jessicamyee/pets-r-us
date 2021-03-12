@@ -12,6 +12,7 @@ function Step2(props) {
         placeholder="Enter Adoption Fee (USD)"
         value={props.price}
         onChange={props.handleChange}
+        required
       />
       <input
         className="form-control"
@@ -21,15 +22,16 @@ function Step2(props) {
         placeholder="Enter Link"
         value={props.link}
         onChange={props.handleChange}
+        required
       />
-      <input
+      <textarea
         className="form-control"
-        id="description"
         name="description"
-        type="text"
+        rows={10}
         placeholder="Enter Description"
         value={props.description}
         onChange={props.handleChange}
+        required
       />
     </div>
   );
