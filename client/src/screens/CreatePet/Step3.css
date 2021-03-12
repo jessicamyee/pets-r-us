@@ -9,6 +9,12 @@
 
 .submit-button {
   justify-content: center;
-  background-color: greenyellow;
+  background-color: #233D4D;
+  color: whitesmoke
 }
 
+.submit-button:hover {
+  justify-content: center;
+  background-color: whitesmoke;
+  color: #233D4D;
+}
