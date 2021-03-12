@@ -36,7 +36,7 @@ const MainNav = ({ user }) => {
   return (
     <Navbar className="nav-section" expand="lg" className="sticky-top">
       <Navbar.Brand href="/" className="page-logo">
-        Pets-R-Us
+        <img className="logo-pic" src="https://i.imgur.com/MYeogFE.png"/>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
       <Navbar.Collapse id="basic-navbar-nav">

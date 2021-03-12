@@ -1,9 +1,29 @@
 .pets {
-  /* display:flex; */
-  /* width: 335px; */
   display: grid;
   grid-template-columns: 350px 350px 350px;
   grid-template-rows: auto;
   /* border: 2px solid green; */
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+  .pets {
+    display:flex;
+    justify-items: center;
+    flex-direction: column;
+    /* border: 3px solid green; */
+    margin-left:20px;
+    margin-right: 20px;
+
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .pets {
+    display:flex;
+    flex-wrap: wrap;
+    /* border: 3px solid blue; */
+    margin-left:20px;
+    margin-right: 20px;
+
+  }
 }

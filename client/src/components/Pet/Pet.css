@@ -22,12 +22,15 @@
   "B"
   "S"
   ;
-  width:330px;
+  width: 330px;
   height: 450px;
   border: 1px solid #233D4D;
   border-radius: 3px;
   padding: 1vw;
   margin-bottom: 10px;
+}
+.all-pet-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .all-imgURL {

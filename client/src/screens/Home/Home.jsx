@@ -5,15 +5,19 @@ import "./Home.css"
 function Home(props) {
   return (
     <Layout user={props.user} >
+      <div className="home-body">
       <div>
         <CarouselProvider
         className="home-carousel"/>
       </div>
       <div className="mission">
-        Text about mission here.
+          Text about mission here.
+      </div>
       </div>
     </Layout>
   );
 }
 
 export default Home;
+
+
