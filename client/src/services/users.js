@@ -1,7 +1,6 @@
 import api from "./apiConfig";
 import jwtDecode from "jwt-decode";
 
-
 export const signUp = async (credentials) => {
   try {
     const resp = await api.post("/sign-up", credentials);
@@ -33,15 +32,6 @@ export const signOut = async (user) => {
   }
 };
 
-export const changePassword = async (passwords, user) => {
-  try {
-    const resp = await api.post("/");
-    return resp.data;
-  } catch (error) {
-    throw error;
-  }
-};
-
 export const verifyUser = async () => {
   const token = localStorage.getItem("token");
   if (token) {
@@ -49,4 +39,13 @@ export const verifyUser = async () => {
     return res.data;
   }
   return false;
+};
+
+export const userPets = async (userId) => {
+  try {
+    const resp = await api.get(`/users/${userId}`);
+    return resp.data.pets;
+  } catch (error) {
+    throw error;
+  }
 };
