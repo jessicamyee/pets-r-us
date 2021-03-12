@@ -37,7 +37,11 @@ function Step1(props) {
         onChange={props.handleChange}
       />
             {/* <label htmlFor="gender">Gender</label> */}
-      <input
+      <select name="gender" onChange={props.handleChange} id="dropdown">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        </select>
+      {/* <input
         className="form-control-a"
         id="gender"
         name="gender"
@@ -45,8 +49,11 @@ function Step1(props) {
         placeholder="Enter Gender"
         value={props.gender}
         onChange={props.handleChange}
-      />
+      /> */}
+
     </div>
+    
+  
   );
 }
 export default Step1;
