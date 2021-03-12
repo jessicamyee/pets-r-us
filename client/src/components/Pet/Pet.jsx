@@ -6,7 +6,6 @@ const Pet = (props) => {
   return (
     <div className="all-pets-container">
       <Link className="all-link" to={`/pets/${props._id}`}>
-        {/* <div className="cards-container"> */}
           <div className="all-pet-card">
             <div className="all-name">{props.name}</div>
             <div className="all-breed">{props.breed}</div>
@@ -15,7 +14,6 @@ const Pet = (props) => {
             alt={props.breed} />
             <div className="more">Read More!</div>
           </div>
-        {/* </div>   */}
       </Link>
     </div>
   )
