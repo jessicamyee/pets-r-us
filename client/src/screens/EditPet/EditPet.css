@@ -54,6 +54,7 @@
 .input-name {
   background-color: #cddcdc;
   width: 300px;
+  height: fit-content;
   font-family: "Montserrat", sans-serif;
   font-size: 58px;
   letter-spacing: 1px;
@@ -62,6 +63,7 @@
 
 .input-breed,
 .input-age,
+.input-gender,
 .input-price,
 .input-link {
   background-color: #cddcdc;
@@ -138,6 +140,7 @@
   .input-name,
   .input-breed,
   .input-age,
+  .input-gender,
   .input-price,
   .input-link,
   .textarea-description {

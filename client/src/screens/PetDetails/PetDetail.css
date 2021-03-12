@@ -39,6 +39,7 @@
 
 .detail-breed,
 .detail-age,
+.detail-gender,
 .detail-price {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
@@ -151,6 +152,7 @@
 
   .detail-breed,
   .detail-age,
+  .detail-gender,
   .detail-price {
     font-size: 16px;
   }
@@ -168,5 +170,16 @@
     padding: 25px 40px;
     max-width: 100vw;
     font-size: 16px;
+  }
+
+  .detail-link:link,
+  .detail-link:visited {
+    font-size: 16px;
+  }
+
+  .detail-link:hover {
+    border-bottom: 1px solid #a3cef1;
+    padding-bottom: 2px;
+    font-size: 18px;
   }
 }
