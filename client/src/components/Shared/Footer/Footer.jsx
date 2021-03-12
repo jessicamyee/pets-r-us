@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Footer = () => (
   <footer>
     <Link to={'/'}>
-      <img className="logo-footer" src="https://i.imgur.com/MYeogFE.png" />{" "}
+      <img className="logo-footer" src="https://i.imgur.com/eTLFAD5.png" />{" "}
     </Link>
     <div className="hutch-footer person-footer">
       <a
