@@ -1,0 +1,41 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 300px;
+  margin-right: 150px;
+  margin-left:150px;
+}
+
+
+.form-header{
+  display: flex;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+}
+
+.step-count{
+  display: flex;
+  justify-content: center;
+  border: black solid 3px;
+  margin-bottom: 30px;
+}
+/* .submission-form {
+  background-color: orange;
+  background: linear-gradient(-45deg, #ee7752, red, #d1c517, magenta);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
