@@ -8,7 +8,7 @@ function Step1(props) {
   return (
     <div className="form-group-1">
       <input
-        className="form-control-a"
+        className="create-name"
         id="name"
         name="name"
         type="text"
@@ -18,6 +18,7 @@ function Step1(props) {
         required
       />
       <input
+        className="create-breed"
         id="breed"
         name="breed"
         type="text"
@@ -27,7 +28,7 @@ function Step1(props) {
         required
       />
       <input
-        className="form-control-a"
+        className="create-age"
         id="age"
         name="age"
         type="text"
@@ -38,6 +39,7 @@ function Step1(props) {
       />
       <select
         required
+        className="create-gender"
         name="gender"
         onChange={props.handleChange}
         id="dropdown"

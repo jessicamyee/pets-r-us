@@ -5,7 +5,7 @@ function Step2(props) {
   return (
     <div className="form-group-2">
       <input
-        className="form-control"
+        className="create-price"
         id="price"
         name="price"
         type="text"
@@ -15,22 +15,23 @@ function Step2(props) {
         required
       />
       <input
-        className="form-control"
+        className="create-link"
         id="link"
         name="link"
         type="link"
-        placeholder="Enter Link"
+        placeholder="Enter Adoption Link"
         value={props.link}
         onChange={props.handleChange}
         required
       />
       <textarea
-        className="form-control"
+        className="create-description"
         name="description"
-        rows={10}
-        placeholder="Enter Description"
+        rows={5}
+        placeholder="Enter Description (500 character limit)"
         value={props.description}
         onChange={props.handleChange}
+        maxlength="500"
         required
       />
     </div>
