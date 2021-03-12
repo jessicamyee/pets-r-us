@@ -1,9 +1,8 @@
 .layout {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .layout-children {
-  height: 100vh;
+  min-height: 78vh;
 }

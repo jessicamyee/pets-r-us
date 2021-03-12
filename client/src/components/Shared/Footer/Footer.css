@@ -1,14 +1,23 @@
 
 
 footer {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
-  position: fixed;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   background-color: #233D4D;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.logo-footer{
+  height: 45px;
 }
 
 .person-footer {
@@ -20,6 +29,7 @@ footer {
 .member-name {
   color: #ffffff;
   font-size: 12px;
+  margin-bottom: 0px;
 }
 
 .footer-photo-git {

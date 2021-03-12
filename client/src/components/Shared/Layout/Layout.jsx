@@ -3,14 +3,18 @@ import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 
 
-const Layout = (props) => (
+const Layout = (props) => {
+  console.log(props.backgroundColor);
+
+  return (
     <div className='layout'>
-        <Nav user={props.user} />
-        <div className="layout-children">
-            {props.children}
-        </div>
-        <Footer />
+      <Nav user={props.user} />
+      <div className="layout-children" style={{ backgroundColor: `${props.backgroundColor}` }}>
+        {props.children}
+      </div>
+      <Footer />
     </div>
-)
+  );
+}
 
 export default Layout
