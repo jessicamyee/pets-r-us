@@ -58,7 +58,7 @@ const SignIn = (props) => {
   const { username, password } = form;
 
   return (
-    <Layout user={props.user}>
+    <Layout user={props.user} backgroundColor={'#82B0A2'}>
       <div className="form-container-sign-in">
         <h3 className="sign-in-header">Sign-in to your Account</h3>
         <div className="signin-fields">
