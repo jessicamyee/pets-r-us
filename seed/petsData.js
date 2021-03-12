@@ -59,7 +59,7 @@ const main = async () => {
         "Blue is one of the most beautiful Chows we ever did see. We don't know much about her past, but we can tell by her demeanor that she likely has a pretty horrible story to tell. If only dogs could speak to us. We pulled Blue from South Carolina at the beginning of the year. We were told she was food aggressive, but that didn't scare us because we have worked with that many times before. We don't know if the traveling north changed her (sometimes the trip can traumatize a dog) or if the previous shelter was not completely truthful about her behaviors. The first few days we had her we could not safely touch her. She never bit us, but we also didn't give her the chance to. We could tell by her body language that she wanted nothing to do with us. We decided to give her a few days to decompress because sometimes that is all a dog needs. She did get better after a few days. She began letting us slip lead her and we were learning to understand her body language better. Her play often appeared aggressive to us, so we had to learn how to tell the difference. She was a bad cage fighter and would freak out in her kennel if she had food and someone walked by. One time she did bite one of our employees when we were putting her food down for her. Thankfully it was more of a warning bite and she didn't break skin. She immediately released and backed up because she knew she had done something wrong. It was at this point that we realized her only hope was a professional trainer. Thankfully she got extremely comfortable with our director. Our director could handle her without a problem, feed her, bathe her, and really do anything to her. This showed us that there is hope for this sweet girl. She just needed to learn that life isn't as scary as she thinks.",
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48885469/1/?bust=1614728729&width=720",
-      type: "Doggo",
+      type: "Dog",
     },
     {
       name: "Hollis",
@@ -73,7 +73,7 @@ const main = async () => {
         "All of our adoptable rabbits are spayed/neutered, health-checked by rabbit-savvy vets and fostered in private homes.",
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50728140/1/?bust=1615344492&width=1080",
-      type: "Bunny",
+      type: "Rabbit",
     },
   ];
 

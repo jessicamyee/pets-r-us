@@ -9,9 +9,9 @@ const Search = (props) => {
         value={props.value}
         onChange={(e) => props.onChange(e)}>
         <option className="type-input-default" value="">Search</option>
-        <option className="type-input" value="doggo">Doggo</option>
-        <option className="type-input" value="kitty">Kitty</option>
-        <option className="type-input" value="bunny">Bunny</option>
+        <option className="type-input" value="dog">Doggo</option>
+        <option className="type-input" value="cat">Kitty</option>
+        <option className="type-input" value="rabbit">Bunny</option>
       </select>
     </form>
   );
