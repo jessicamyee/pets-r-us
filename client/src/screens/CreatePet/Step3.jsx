@@ -7,7 +7,7 @@ function Step3(props) {
   return (
     <div className="form-group-3">
       <input
-        className="form-control"
+        className="create-image-address"
         id="imgURL"
         name="imgURL"
         type="text"
@@ -17,7 +17,7 @@ function Step3(props) {
         required
       />
 
-      <select required name="type" onChange={props.handleChange} id="dropdown2">
+      <select className="create-animal-type" required name="type" onChange={props.handleChange} id="dropdown2">
         <option value="" disable selected>Select Animal Type</option>
         <option value="Doggo">Doggo</option>
         <option value="Kitty">Kitty</option>
