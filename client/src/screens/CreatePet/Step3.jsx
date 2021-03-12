@@ -2,9 +2,9 @@ import "./Step3.css";
 
 function Step3(props) {
   if (props.currentStep !== 3) {
-    return null
+    return null;
   }
-  return(
+  return (
     <div className="form-group-3">
       <input
         className="form-control"
@@ -15,7 +15,7 @@ function Step3(props) {
         value={props.imgURL}
         onChange={props.handleChange}
       />
-      
+
       <input
         className="form-control"
         id="type"
@@ -25,8 +25,8 @@ function Step3(props) {
         value={props.type}
         onChange={props.handleChange}
       />
-     <button className="submit-button">Submit</button>
-    </div >
+      <button className="submit-button">Submit</button>
+    </div>
   );
 }
 export default Step3;
