@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Step3.css";
 
 function Step3(props) {
@@ -28,9 +28,9 @@ function Step3(props) {
         value={props.type}
         onChange={props.handleChange}
       />
-      <Link to="./pets">
+      {/* <Link to="./pets"> */}
      <button className="submit-button">Submit</button>
-    </Link>
+    {/* </Link> */}
     </div >
   );
 }
