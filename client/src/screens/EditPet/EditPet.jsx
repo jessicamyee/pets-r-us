@@ -9,6 +9,7 @@ const EditPet = (props) => {
     name: "",
     breed: "",
     age: "",
+    gender: "",
     price: "",
     link: "",
     imgURL: "",
@@ -84,6 +85,14 @@ const EditPet = (props) => {
               placeholder="Age"
               value={pet.age}
               name="age"
+              required
+              onChange={handleChange}
+            />
+            <input
+              className="input-gender"
+              placeholder="Gender"
+              value={pet.gender}
+              name="gender"
               required
               onChange={handleChange}
             />
