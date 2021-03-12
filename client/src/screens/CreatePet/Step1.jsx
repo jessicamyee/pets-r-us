@@ -7,7 +7,6 @@ function Step1(props) {
   }
   return (
     <div className="form-group-1">
-      {/* <label htmlFor="pet-name">Pet Name</label> */}
       <input
         className="form-control-a"
         id="name"
@@ -17,7 +16,6 @@ function Step1(props) {
         value={props.name}
         onChange={props.handleChange}
       />
-      {/* <label htmlFor="breed">Breed</label> */}
       <input
         id="breed"
         name="breed"
@@ -26,7 +24,6 @@ function Step1(props) {
         value={props.breed}
         onChange={props.handleChange}
       />
-      {/* <label htmlFor="age">Age</label> */}
       <input
         className="form-control-a"
         id="age"
@@ -36,21 +33,10 @@ function Step1(props) {
         value={props.age}
         onChange={props.handleChange}
       />
-            {/* <label htmlFor="gender">Gender</label> */}
       <select name="gender" onChange={props.handleChange} id="dropdown">
         <option value="male">Male</option>
         <option value="female">Female</option>
         </select>
-      {/* <input
-        className="form-control-a"
-        id="gender"
-        name="gender"
-        type="text"
-        placeholder="Enter Gender"
-        value={props.gender}
-        onChange={props.handleChange}
-      /> */}
-
     </div>
     
   

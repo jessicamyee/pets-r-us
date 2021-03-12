@@ -1,10 +1,9 @@
- function Step2(props) {
+function Step2(props) {
   if (props.currentStep !== 2) {
-    return null
+    return null;
   }
-  return(
+  return (
     <div className="form-group-2">
-      {/* <label htmlFor="price">Enter Adoption Fee (USD)</label> */}
       <input
         className="form-control"
         id="price"
@@ -14,7 +13,6 @@
         value={props.price}
         onChange={props.handleChange}
       />
-      {/* <label htmlFor="link">Link</label> */}
       <input
         className="form-control"
         id="link"
@@ -23,8 +21,7 @@
         placeholder="Enter Link"
         value={props.link}
         onChange={props.handleChange}
-        />
-      {/* <label htmlFor="description">Description</label> */}
+      />
       <input
         className="form-control"
         id="description"
@@ -33,9 +30,9 @@
         placeholder="Enter Description"
         value={props.description}
         onChange={props.handleChange}
-        />  
+      />
     </div>
   );
- }
+}
 
- export default Step2
+export default Step2;

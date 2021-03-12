@@ -1,19 +1,14 @@
 .form-group-3{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 .form-control{
-  /* display: flex; */
   justify-content: center;
   padding-top: 10px;
 }
 
-
 .submit-button {
-  /* display: flex; */
   justify-content: center;
   background-color: greenyellow;
-  /* margin-top: 30px; */
 }
 
