@@ -4,7 +4,6 @@ import Footer from '../Footer/Footer'
 
 
 const Layout = (props) => {
-  console.log(props.backgroundColor);
 
   return (
     <div className='layout'>
