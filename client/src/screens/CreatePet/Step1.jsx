@@ -37,6 +37,7 @@ function Step1(props) {
         onChange={props.handleChange}
         required
       />
+      <div className="select-create-gender">
       <select
         required
         className="create-gender"
@@ -50,7 +51,8 @@ function Step1(props) {
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>
-      </select>
+        </select>
+        </div>
     </div>
   );
 }
