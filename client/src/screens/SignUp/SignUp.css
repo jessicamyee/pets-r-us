@@ -36,6 +36,7 @@ input{
   padding: 7px;
   background-color: #233D4D;
   color: #FFFFFF;
+  width: 200px;
 }
 
 .signup-btn:hover {
