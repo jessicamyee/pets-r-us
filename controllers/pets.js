@@ -11,6 +11,7 @@ const getPets = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
 const getPet = async (req, res) => {
   try {
     const { id } = req.params;
@@ -33,6 +34,7 @@ const createPet = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
 const editPet = async (req, res) => {
   const { id } = req.params;
   await Pet.findByIdAndUpdate(id, req.body, { new: true }, (error, pet) => {
@@ -57,6 +59,7 @@ const deletePet = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
 module.exports = {
   createPet,
   getPets,
