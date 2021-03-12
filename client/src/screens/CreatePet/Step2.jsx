@@ -1,3 +1,6 @@
+import './Step2.css'
+
+
 function Step2(props) {
   if (props.currentStep !== 2) {
     return null;
