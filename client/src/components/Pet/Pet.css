@@ -29,6 +29,9 @@
   padding: 1vw;
   margin-bottom: 10px;
 }
+.all-pet-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 .all-imgURL {
   grid-area: I;
