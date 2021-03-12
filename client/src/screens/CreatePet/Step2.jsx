@@ -1,10 +1,9 @@
- function Step2(props) {
+function Step2(props) {
   if (props.currentStep !== 2) {
-    return null
+    return null;
   }
-  return(
+  return (
     <div className="form-group-2">
-      {/* <label htmlFor="price">Enter Adoption Fee (USD)</label> */}
       <input
         className="form-control"
         id="price"
@@ -13,8 +12,8 @@
         placeholder="Enter Adoption Fee (USD)"
         value={props.price}
         onChange={props.handleChange}
+        required
       />
-      {/* <label htmlFor="link">Link</label> */}
       <input
         className="form-control"
         id="link"
@@ -23,19 +22,19 @@
         placeholder="Enter Link"
         value={props.link}
         onChange={props.handleChange}
-        />
-      {/* <label htmlFor="description">Description</label> */}
-      <input
+        required
+      />
+      <textarea
         className="form-control"
-        id="description"
         name="description"
-        type="text"
+        rows={10}
         placeholder="Enter Description"
         value={props.description}
         onChange={props.handleChange}
-        />  
+        required
+      />
     </div>
   );
- }
+}
 
- export default Step2
+export default Step2;

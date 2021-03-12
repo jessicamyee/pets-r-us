@@ -7,7 +7,6 @@ function Step1(props) {
   }
   return (
     <div className="form-group-1">
-      {/* <label htmlFor="pet-name">Pet Name</label> */}
       <input
         className="form-control-a"
         id="name"
@@ -16,8 +15,8 @@ function Step1(props) {
         placeholder="Enter Pet Name"
         value={props.name}
         onChange={props.handleChange}
+        required
       />
-      {/* <label htmlFor="breed">Breed</label> */}
       <input
         id="breed"
         name="breed"
@@ -25,8 +24,8 @@ function Step1(props) {
         placeholder="Enter Breed"
         value={props.breed}
         onChange={props.handleChange}
+        required
       />
-      {/* <label htmlFor="age">Age</label> */}
       <input
         className="form-control-a"
         id="age"
@@ -35,25 +34,22 @@ function Step1(props) {
         placeholder="Enter Age"
         value={props.age}
         onChange={props.handleChange}
+        required
       />
-            {/* <label htmlFor="gender">Gender</label> */}
-      <select name="gender" onChange={props.handleChange} id="dropdown">
+      <select
+        required
+        name="gender"
+        onChange={props.handleChange}
+        id="dropdown"
+      >
+        <option value="" disable selected>
+          Select Gender
+        </option>
         <option value="male">Male</option>
         <option value="female">Female</option>
-        </select>
-      {/* <input
-        className="form-control-a"
-        id="gender"
-        name="gender"
-        type="text"
-        placeholder="Enter Gender"
-        value={props.gender}
-        onChange={props.handleChange}
-      /> */}
-
+        <option value="other">Other</option>
+      </select>
     </div>
-    
-  
   );
 }
 export default Step1;
