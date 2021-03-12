@@ -54,7 +54,7 @@ export default class MasterForm extends React.Component {
     if (currentStep !== 1) {
       return (
         <button
-          className="btn btn-secondary"
+          className="prev-secondary"
           type="button"
           onClick={this._prev}
         >
@@ -70,7 +70,7 @@ export default class MasterForm extends React.Component {
     if (currentStep < 3) {
       return (
         <button
-          className="btn btn-primary float-right"
+          className="next-button"
           type="button"
           onClick={this._next}
         >
