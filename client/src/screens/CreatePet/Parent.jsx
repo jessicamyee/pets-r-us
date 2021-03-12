@@ -90,8 +90,8 @@ export default class MasterForm extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Add your animal to our community!</h1>
-        <p>Step {this.state.currentStep} </p>
+        <div className="form-header">Add your animal to our community!</div>
+        <div className="step-count">Step {this.state.currentStep} of 3!</div>
 
         <form className="submission-form" onSubmit={this.handleSubmit}>
 

@@ -6,7 +6,21 @@ form {
   margin-left:150px;
 }
 
-.submission-form {
+
+.form-header{
+  display: flex;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+}
+
+.step-count{
+  display: flex;
+  justify-content: center;
+  border: black solid 3px;
+  margin-bottom: 30px;
+}
+/* .submission-form {
   background-color: orange;
   background: linear-gradient(-45deg, #ee7752, red, #d1c517, magenta);
   background-size: 400% 400%;
@@ -24,4 +38,4 @@ form {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */

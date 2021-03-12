@@ -4,7 +4,7 @@
   }
   return(
     <div className="form-group-2">
-      <label htmlFor="price">Enter Adoption Fee (USD)</label>
+      {/* <label htmlFor="price">Enter Adoption Fee (USD)</label> */}
       <input
         className="form-control"
         id="price"
@@ -14,7 +14,7 @@
         value={props.price}
         onChange={props.handleChange}
       />
-      <label htmlFor="link">Link</label>
+      {/* <label htmlFor="link">Link</label> */}
       <input
         className="form-control"
         id="link"
@@ -24,7 +24,7 @@
         value={props.link}
         onChange={props.handleChange}
         />
-      <label htmlFor="description">Description</label>
+      {/* <label htmlFor="description">Description</label> */}
       <input
         className="form-control"
         id="description"
