@@ -4,7 +4,6 @@ import Step2 from "./Step2";
 import Step3 from "./Step3";
 import './Parent.css';
 import { createPet } from "../../services/pets";
-// import React, { useState } from "react";
 
 export default class MasterForm extends React.Component {
   constructor(props) {
@@ -23,9 +22,6 @@ export default class MasterForm extends React.Component {
     };
   }
 
-  // const [isCreated, setCreated] = useState(false);
-
-
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({
@@ -37,10 +33,8 @@ export default class MasterForm extends React.Component {
     await createPet(this.state) 
     }
   
-
   _next = () => {
     let currentStep = this.state.currentStep;
-    // here there are more than two options so use an if statement rather than a ternary
     currentStep = currentStep >= 2 ? 3 : currentStep + 1;
     this.setState({
       currentStep: currentStep,

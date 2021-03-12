@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import "./Step3.css";
 
 function Step3(props) {
@@ -7,7 +6,6 @@ function Step3(props) {
   }
   return(
     <div className="form-group-3">
-      {/* <label htmlFor="imgURL">imgURL</label> */}
       <input
         className="form-control"
         id="imgURL"
@@ -18,7 +16,6 @@ function Step3(props) {
         onChange={props.handleChange}
       />
       
-      {/* <label htmlFor="type">type</label> */}
       <input
         className="form-control"
         id="type"
@@ -28,9 +25,7 @@ function Step3(props) {
         value={props.type}
         onChange={props.handleChange}
       />
-      {/* <Link to="./pets"> */}
      <button className="submit-button">Submit</button>
-    {/* </Link> */}
     </div >
   );
 }
