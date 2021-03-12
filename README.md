@@ -30,8 +30,11 @@ const User = new Schema(
 )
 ```
 
-2.  **Whimsical Diagram**:
-    [Whimsical Diagram](https://whimsical.com/pets-r-us-BYYb4aEnZ6ZQp5euw1pyeM)
+2.  **Whimsical Diagram and Adobe XD Wireframes**:
+
+-  [Whimsical Diagram](https://whimsical.com/pets-r-us-BYYb4aEnZ6ZQp5euw1pyeM)
+-  [Adobe XD Wireframes](https://xd.adobe.com/view/4820e06a-5260-47cc-be25-641dc826cec1-1d73/)
+
 3.  **Team Expectations**:
 
 - Please follow our Team Expectation document at the following link:
