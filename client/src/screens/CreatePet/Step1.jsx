@@ -36,13 +36,21 @@ function Step1(props) {
         onChange={props.handleChange}
         required
       />
-      <select required name="gender" onChange={props.handleChange} id="dropdown">
+      <select
+        required
+        name="gender"
+        onChange={props.handleChange}
+        id="dropdown"
+      >
+        <option value="" disable selected>
+          Select Gender
+        </option>
+
         <option value="male">Male</option>
         <option value="female">Female</option>
-        </select>
+        <option value="other">Other</option>
+      </select>
     </div>
-    
-  
   );
 }
 export default Step1;

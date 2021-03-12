@@ -11,21 +11,19 @@ function Step3(props) {
         id="imgURL"
         name="imgURL"
         type="text"
-        placeholder="Enter imgURL"
+        placeholder="Enter Image Address"
         value={props.imgURL}
         onChange={props.handleChange}
         required
       />
 
-      <input
-        className="form-control"
-        id="type"
-        name="type"
-        placeholder="Enter Animal Type"
-        value={props.type}
-        onChange={props.handleChange}
-        required
-      />
+      <select required name="type" onChange={props.handleChange} id="dropdown2">
+        <option value="" disable selected>Select Animal Type</option>
+        <option value="Doggo">Doggo</option>
+        <option value="Kitty">Kitty</option>
+        <option value="Bunny">Bunny</option>  
+      </select>
+      
       <button className="submit-button">Submit</button>
     </div>
   );
