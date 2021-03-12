@@ -1,6 +1,4 @@
 .pet-edit {
-  /* display: flex;
-  flex-direction: column; */
   padding-top: 80px;
   background-color: #c2d8d8;
   background-image: radial-gradient(
@@ -105,4 +103,58 @@
   height: 5vh;
   font-size: 16px;
   transition: 0.2s ease-in-out;
+}
+@media (max-width: 500px) {
+  .pet-edit {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .edit-image-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  .edit-product-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding-bottom: 10px;
+  }
+
+  .edit-input-image-link {
+    width: 300px;
+  }
+
+  .edit-top {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .input-name,
+  .input-breed,
+  .input-age,
+  .input-price,
+  .input-link,
+  .textarea-description {
+    font-size: 14px;
+  }
+
+  .textarea-description {
+    display: flex;
+    width: 80vw;
+    margin-left: 10px;
+  }
+
+  .edit-save-button {
+    display: flex;
+    font-size: 14px;
+    width: 30vw;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
 }
