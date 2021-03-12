@@ -1,99 +1,11 @@
-.create-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 120px;
-  /* background-color: #233D4D; */
-
-}
-
-.create-form-header {
-  font-size: 58px;
-  letter-spacing: 1px;
-  padding: 5px;
-  font-weight: 800;
-  font-family: "Pacifico", cursive;
-  text-decoration: underline;
-
-}
-
-.create-form-instructions {
-  display: flex;
-  /* border: solid 3px black; */
-  font-size: 40px;
-  font-weight: 800;
-}
-
-.input-gender {
-  max-width: 350px;
-  margin-bottom: 10px;
-}
-
-.input-name {
-  max-width: 350px;
-  margin-bottom: 10px;
-}
-
-.input-price {
-  max-width: 350px;
-  
-}
-
-.input-textarea-description {
-  max-width: 700px;
-}
-
-.input-image-link {
-  max-width: 350px;
-}
-
-.input-adoption-link {
-  max-width: 350px;
-
-}
-
-.input-age {
-  max-width: 175px;
-}
-
-.input-breed {
-  max-width: 175px;
-}
-
-.animal-type {
-  max-width: 175px;
-}
-
-.submit-button {
-  max-width: 100px;
-  background-color: #233D4D;
-  color: whitesmoke;
-  box-shadow: 10px 5px 5px gray;
-  font-size: 14px;
-  font-family: "Pacifico", cursive;
-  text-align: center;
-  margin-top: 25px;
-
-}
-
-.submit-button:hover {
-  max-width: 100px;
-  background-color: whitesmoke;
-  color: #233D4D;
-}
-
-label {
-  color: #233D4D;
-
-}
-
 .create-pet {
   background-color: orange;
   background: linear-gradient(-45deg, #ee7752, red, #d1c517, magenta);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
 }
+
+
 
 @keyframes gradient {
 	0% {
@@ -106,23 +18,4 @@ label {
 		background-position: 0% 50%;
 	}
 }
-
-@media screen and (max-width: 375px){
-  .create-form-header {
-    font-size: 29px;
-    letter-spacing: 1px;
-    padding: 5px;
-    font-weight: 400;
-    font-family: "Pacifico", cursive;
-    text-decoration: underline;
-  
-  }
-  .create-form-instructions {
-    display: flex;
-    /* border: solid 3px black; */
-    font-size: 20px;
-    font-weight: 400;
-  }
-}
-
 
