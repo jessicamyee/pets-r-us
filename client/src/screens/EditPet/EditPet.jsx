@@ -120,6 +120,7 @@ const EditPet = (props) => {
             placeholder="Pet Description"
             value={pet.description}
             name="description"
+            maxlength="500"
             required
             onChange={handleChange}
           />

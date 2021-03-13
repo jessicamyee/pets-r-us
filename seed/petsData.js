@@ -1,9 +1,18 @@
 const db = require("../db/connection");
 const Pet = require("../models/pet");
+const User = require("../models/user");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 const main = async () => {
+  const user1 = new User({
+    username: "username",
+    email: "user1@gmail.com",
+    password_digest: "password",
+    pets: [],
+  });
+  await user1.save();
+
   const pets = [
     {
       name: "Casper",
@@ -18,6 +27,7 @@ const main = async () => {
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50708836/1/?bust=1615398914&width=1080",
       type: "Dog",
+      userId: user1,
     },
     {
       name: "Odie",
@@ -32,6 +42,7 @@ const main = async () => {
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50829869/2/?bust=1615479317&width=1080",
       type: "Dog",
+      userId: user1,
     },
     {
       name: "Ollie",
@@ -46,6 +57,7 @@ const main = async () => {
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50176975/6/?bust=1615350995&width=1080",
       type: "Cat",
+      userId: user1,
     },
     {
       name: "Blue",
@@ -60,6 +72,7 @@ const main = async () => {
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48885469/1/?bust=1614728729&width=720",
       type: "Dog",
+      userId: user1,
     },
     {
       name: "Hollis",
@@ -74,12 +87,17 @@ const main = async () => {
       imgURL:
         "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50728140/1/?bust=1615344492&width=1080",
       type: "Rabbit",
+      userId: user1,
     },
   ];
 
   await Pet.insertMany(pets);
   console.log("Ready for my furever home!");
+
+  user1.pets = await Pet.find({ userId: user1 });
+  await user1.save();
 };
+
 const run = async () => {
   await main();
   db.close();
