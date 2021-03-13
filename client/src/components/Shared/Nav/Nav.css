@@ -4,12 +4,16 @@
 
 .sticky-top{
   position: sticky;
-  background-color: #324652;
+  background-color: #233D4D;
 }
 
 .page-logo{
   color: #FFFFFF !important;
   margin-left: 5%;
+}
+
+.logo-pic{
+  height: 50px;
 }
 
 .nav-tabs{
@@ -36,3 +40,8 @@
   background-color: white !important;
 }
 
+@media only screen and (max-width: 550px) {
+  .nav-section {
+    width: 100%
+  }
+}

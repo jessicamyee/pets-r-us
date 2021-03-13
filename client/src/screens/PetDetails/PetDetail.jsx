@@ -39,6 +39,7 @@ const PetDetail = (props) => {
             </div>
             <div className="detail-breed">Breed: {pet.breed}</div>
             <div className="detail-age">Age: {pet.age}</div>
+            <div className="detail-gender">Gender: {pet.gender}</div>
             <div className="detail-price"> Adoption Fee: ${`${pet.price}`}</div>
             <a
               href={pet.link}

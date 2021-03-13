@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SignIn.css";
 import { signIn } from "../../services/users";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Layout from "../../components/Shared/Layout/Layout";
 
 const SignIn = (props) => {
@@ -51,14 +51,18 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button type="submit" className="signin-btn" >Sign In</button>;
+      return (
+        <button type="submit" className="signin-btn">
+          Sign In
+        </button>
+      );
     }
   };
 
   const { username, password } = form;
 
   return (
-    <Layout user={props.user}>
+    <Layout user={props.user} backgroundColor={"#82B0A2"}>
       <div className="form-container-sign-in">
         <h3 className="sign-in-header">Sign-in to your Account</h3>
         <div className="signin-fields">
@@ -85,6 +89,9 @@ const SignIn = (props) => {
               />
             </div>
             {renderError()}
+            <Link to={'/sign-up'} className="redirect-to-signup">
+              <p>Don’t have an account? Sign up here!</p>
+            </Link>
           </form>
         </div>
       </div>

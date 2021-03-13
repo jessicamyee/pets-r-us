@@ -1,13 +1,10 @@
-.form-container-sign-up{
-  background-color: #82B0A2;
-
-}
-
 .sign-up-header{
   color: #1A2C38;
   text-align: center;
   padding-top: 30px;
   margin-bottom: 30px;
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
 }
 
 input{
@@ -28,9 +25,10 @@ input{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #FFFFFF;
-  /* margin-right: 300px;
-  margin-left: 300px; */
+  background-color: white;
+  width: 45%;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 .signup-btn{
