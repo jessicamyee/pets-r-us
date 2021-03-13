@@ -8,7 +8,7 @@ const Search = (props) => {
         name="Search"
         value={props.value}
         onChange={(e) => props.onChange(e)}>
-        <option className="type-input-default" value="">Search</option>
+        <option className="type-input-default" value="">Select</option>
         <option className="type-input" value="dog">Doggo</option>
         <option className="type-input" value="cat">Kitty</option>
         <option className="type-input" value="rabbit">Bunny</option>
