@@ -16,12 +16,15 @@
   justify-content: center;
   font-family: "Pacifico", cursive;
   font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .step-count{
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 45px;
+
 }
 
 .next-button, .prev-secondary  {
