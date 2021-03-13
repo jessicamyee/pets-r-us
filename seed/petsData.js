@@ -1,4 +1,4 @@
-const db = require("./db/connection");
+const db = require("../db/connection");
 const Pet = require("../models/pet");
 const User = require("../models/user");
 

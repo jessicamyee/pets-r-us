@@ -13,7 +13,6 @@ import { verifyUser } from "./services/users";
 
 const App = () => {
   const [user, setUser] = useState(null);
-  const [userId, setUserId] = useState(null);
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -53,7 +52,7 @@ const App = () => {
           <PetDetail user={user} />
         </Route>
         <Route exact path="/users/:id">
-          <MyPets user={user} userId={userId} />
+          <MyPets user={user} />
         </Route>
       </Switch>
     </div>

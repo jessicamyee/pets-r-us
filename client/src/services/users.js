@@ -41,11 +41,11 @@ export const verifyUser = async () => {
   return false;
 };
 
-export const userPets = async (userId) => {
-  try {
-    const resp = await api.get(`/users/${userId}`);
-    return resp.data.pets;
-  } catch (error) {
-    throw error;
-  }
-};
+// export const userPets = async (userId) => {
+//   try {
+//     const resp = await api.get(`/users/${userId}`);
+//     return resp.data.pets;
+//   } catch (error) {
+//     throw error;
+//   }
+// };
