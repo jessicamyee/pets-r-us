@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from 'react'
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import './Parent.css';
 import { createPet } from "../../services/pets";
+
+
 
 export default class MasterForm extends React.Component {
   constructor(props) {
@@ -18,7 +20,7 @@ export default class MasterForm extends React.Component {
       description: "",
       imgURL: "",
       type: "",
-      gender:"",
+      gender: "",
     };
   }
 
@@ -30,8 +32,9 @@ export default class MasterForm extends React.Component {
   };
   handleSubmit = async (event) => {
     event.preventDefault();
-    await createPet(this.state) 
-    }
+    await createPet(this.state)
+  }
+
   
   _next = () => {
     let currentStep = this.state.currentStep;

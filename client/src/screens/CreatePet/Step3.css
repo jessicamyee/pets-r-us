@@ -18,7 +18,7 @@
 
 .submit-button {
   justify-content: center;
-  background-color: #233D4D;
+  background-color: rgb(130, 176, 162);
   color: whitesmoke;
   width: 100px;
 }
