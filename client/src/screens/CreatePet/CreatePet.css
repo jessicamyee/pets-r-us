@@ -5,10 +5,25 @@
 	animation: gradient 10s ease infinite;
 }
 
+.brand-statement {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+}
+
 .form-images {
-  width: 600px;
-  height: 800px;
   opacity: .8;
+}
+
+.form-images:hover {
+  opacity: 1;
+  transition: all 1s ease-in;
+
+}
+
+.form-images:hover {
+  opacity: 1;
+  transition: all 1s ease;
+
 }
 
 @keyframes gradient {
