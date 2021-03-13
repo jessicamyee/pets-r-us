@@ -1,11 +1,16 @@
 .submission-form {
   display: flex;
   /* flex-direction: column; */
+  justify-content: center;
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left:150px;
 }
+.form-buttons {
+  display: flex;
+  justify-content: space-evenly;
 
+}
 .form-header{
   display: flex;
   justify-content: center;
@@ -20,17 +25,17 @@
 }
 
 .next-button, .prev-secondary  {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   background-color: #233D4D;
   color: whitesmoke;
   width: 100px;
-
+  height: 40px;
 }
 
 .next-button:hover, .prev-secondary:hover  {
   background-color: whitesmoke;
   color: #233D4D;
-
 }
 
 

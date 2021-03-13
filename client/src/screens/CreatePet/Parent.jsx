@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+import React from 'react';
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
@@ -89,8 +90,8 @@ export default class MasterForm extends React.Component {
       <React.Fragment>
         <div className="form-header">Add your animal to our community!</div>
         <div className="step-count">Step {this.state.currentStep} of 3!</div>
-
-        <form className="submission-form" onSubmit={this.handleSubmit}>
+<div className="submission-form">
+        <form className="submission-form-template" onSubmit={this.handleSubmit}>
 
           <Step1
             currentStep={this.state.currentStep}
@@ -113,9 +114,12 @@ export default class MasterForm extends React.Component {
             imgURL={this.state.imgURL}
             type={this.state.type}
           />
+          <div className="form-buttons">
           {this.previousButton()}
           {this.nextButton()}
-        </form>
+          </div>
+          </form>
+          </div>
       </React.Fragment>
     );
   }
