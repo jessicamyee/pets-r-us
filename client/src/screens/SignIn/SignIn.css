@@ -44,3 +44,7 @@ input{
 .signin-btn:hover {
   transform:scale(1.1);
 }
+
+.redirect-to-signup :hover{
+  transform:scale(1.05);
+}
