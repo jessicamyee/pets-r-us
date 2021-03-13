@@ -1,53 +1,44 @@
 .submission-form {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 300px;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin-bottom: 100px;
   margin-right: 150px;
   margin-left:150px;
 }
+.form-buttons {
+  display: flex;
+  justify-content: space-evenly;
 
+}
 .form-header{
   display: flex;
   justify-content: center;
   font-family: "Pacifico", cursive;
   font-size: 60px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 
 .step-count{
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 45px;
+
 }
-/* .submission-form {
-  background-color: orange;
-  background: linear-gradient(-45deg, #ee7752, red, #d1c517, magenta);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-} */
 
 .next-button, .prev-secondary  {
+  display: flex;
   justify-content: center;
   background-color: #233D4D;
   color: whitesmoke;
   width: 100px;
+  height: 40px;
 }
 
 .next-button:hover, .prev-secondary:hover  {
   background-color: whitesmoke;
   color: #233D4D;
-
 }
 
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
