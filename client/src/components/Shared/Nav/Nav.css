@@ -40,3 +40,8 @@
   background-color: white !important;
 }
 
+@media only screen and (max-width: 550px) {
+  .nav-section {
+    width: 100%
+  }
+}
