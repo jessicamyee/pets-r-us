@@ -24,7 +24,6 @@ function Step3(props) {
         <option value="Bunny">Bunny</option>  
       </select>
       
-      <button className="submit-button">Submit</button>
     </div>
   );
 }

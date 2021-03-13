@@ -116,7 +116,9 @@ export default class MasterForm extends React.Component {
           />
           <div className="form-buttons">
           {this.previousButton()}
-          {this.nextButton()}
+              {this.nextButton()}
+              <button className="submit-button">Submit</button>
+
           </div>
           </form>
           </div>
