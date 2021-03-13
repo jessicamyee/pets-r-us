@@ -4,15 +4,16 @@ import AllPets from "./screens/AllPets/AllPets";
 import CreatePet from "./screens/CreatePet/CreatePet";
 import EditPet from "./screens/EditPet/EditPet";
 import PetDetail from "./screens/PetDetails/PetDetail";
+import MyPets from "./screens/MyPets/MyPets";
 import SignUp from "./screens/SignUp/SignUp";
 import SignIn from "./screens/SignIn/SignIn";
 import SignOut from "./screens/SignOut/SignOut";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/users";
-// import './App.css'
 
 const App = () => {
   const [user, setUser] = useState(null);
+  const [userId, setUserId] = useState(null);
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -23,8 +24,6 @@ const App = () => {
   }, []);
 
   const clearUser = () => setUser(null);
-
-  console.log(user);
 
   return (
     <div className="app-section">
@@ -48,10 +47,13 @@ const App = () => {
           {user ? <CreatePet user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/pets/:id/edit">
-          {user ? <EditPet user={user} /> : <Redirect to='/' />}
+          {user ? <EditPet user={user} /> : <Redirect to="/" />}
         </Route>
         <Route exact path="/pets/:id">
           <PetDetail user={user} />
+        </Route>
+        <Route exact path="/users/:id">
+          <MyPets user={user} userId={userId} />
         </Route>
       </Switch>
     </div>
