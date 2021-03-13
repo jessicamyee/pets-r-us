@@ -19,6 +19,7 @@ const signUp = async (req, res) => {
     const payload = {
       username: user.username,
       email: user.email,
+      _id: user._id,
     };
     const token = jwt.sign(payload, TOKEN_KEY);
     res.status(201).json({ token });
@@ -34,6 +35,7 @@ const signIn = async (req, res) => {
       const payload = {
         username: user.username,
         email: user.email,
+        _id: user._id,
       };
       const token = jwt.sign(payload, TOKEN_KEY);
       res.status(201).json({ token });
@@ -55,10 +57,20 @@ const verify = async (req, res) => {
     res.status(401).send("Not Authorized");
   }
 };
-const changePassword = async (req, res) => {};
+
+const getUser = async (req, res) => {
+  try {
+    const users = await User.findById(req.params.id).populate("pets");
+    console.log(users);
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 module.exports = {
   signUp,
   signIn,
   verify,
-  changePassword,
+  getUser,
 };
