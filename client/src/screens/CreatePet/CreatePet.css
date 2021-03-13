@@ -5,6 +5,12 @@
 	animation: gradient 10s ease infinite;
 }
 
+.form-images {
+  width: 600px;
+  height: 800px;
+  opacity: .8;
+}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
