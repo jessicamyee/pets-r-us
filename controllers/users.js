@@ -68,9 +68,24 @@ const getUser = async (req, res) => {
   }
 };
 
+const usersPets = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const pet = new Pet(req.body);
+    pet.userId = user;
+    await pet.save();
+    user.pets.push(pet);
+    await user.save();
+    res.status(201).json(pet);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 module.exports = {
   signUp,
   signIn,
   verify,
   getUser,
+  usersPets,
 };
