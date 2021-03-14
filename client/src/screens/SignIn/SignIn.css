@@ -13,7 +13,6 @@ input{
   padding: 10px;
   border-radius: 3.5px;
   border-color: #18101069;
-
 }
 
 .input-field {
@@ -26,7 +25,7 @@ input{
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: white;
-  width: 45%;
+  width: 600px;
   margin-left:auto;
   margin-right: auto;
 }
@@ -47,4 +46,39 @@ input{
 
 .redirect-to-signup :hover{
   transform:scale(1.05);
+}
+
+
+@media only screen and (max-width: 658px) {
+  .sign-in-header{
+    font-size: 28px;
+  }
+
+  input{
+    width: 350px;
+  }
+
+  .signin-fields{
+    width: 450px;
+  }
+
+  .signin-btn{
+    width: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 483px) {
+
+  input{
+    width: 220px;
+  }
+
+  .signin-fields{
+    width: 320px;
+  }
+
+  .signin-btn{
+    width: 100px;
+  }
 }
