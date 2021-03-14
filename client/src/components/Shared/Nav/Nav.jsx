@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 
 const authenticatedOptions = (
   <>
+    <Nav.Link as={NavLink} to="/users/:id/" className="nav-tabs">
+      My Pets
+    </Nav.Link>
     <Nav.Link as={NavLink} to="/add-pet" className="nav-tabs">
       Add a Pet
     </Nav.Link>

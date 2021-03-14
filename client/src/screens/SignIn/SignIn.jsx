@@ -53,7 +53,7 @@ const SignIn = (props) => {
     } else {
       return (
         <button type="submit" className="signin-btn">
-          Sign In
+          SIGN IN
         </button>
       );
     }

@@ -69,7 +69,7 @@ const SignUp = (props) => {
         <div>
           {errorMessage && <p id="error-message">{errorMessage}</p>}
           <button type="submit" className="signup-btn">
-            Sign Up
+            SIGN UP
           </button>
         </div>
       );
