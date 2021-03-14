@@ -46,7 +46,7 @@ const EditPet = (props) => {
   }
 
   return (
-    <Layout user={props.user}>
+    <Layout user={props.user} backgroundColor={"#cddcdc"}>
       <div className="pet-edit">
         <div className="edit-image-container">
           <img className="edit-product-image" src={pet.imgURL} alt={pet.name} />

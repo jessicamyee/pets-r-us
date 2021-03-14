@@ -1,4 +1,5 @@
 const Pet = require("../models/pet");
+const User = require("../models/user");
 const db = require("../db/connection");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
@@ -25,14 +26,43 @@ const getPet = async (req, res) => {
 };
 const createPet = async (req, res) => {
   try {
-    const pet = await new Pet(req.body);
+    const user = await User.findById(req.params.id);
+    const {
+      name,
+      breed,
+      age,
+      price,
+      link,
+      description,
+      imgURL,
+      type,
+      gender,
+    } = req.body;
+    const payload = {
+      name,
+      breed,
+      age,
+      price,
+      link,
+      description,
+      imgURL,
+      type,
+      gender,
+      userId: user,
+    };
+
+    const pet = await new Pet(payload);
     await pet.save();
+    user.pets.push(pet);
+    await user.save();
+
     res.status(201).json(pet);
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: error.message });
   }
 };
+
 const editPet = async (req, res) => {
   const { id } = req.params;
   await Pet.findByIdAndUpdate(id, req.body, { new: true }, (error, pet) => {
