@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import "./SignUp.css";
 import { signUp, signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
