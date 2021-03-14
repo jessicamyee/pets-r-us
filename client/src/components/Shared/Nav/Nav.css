@@ -2,46 +2,46 @@
   display: flex;
 }
 
-.sticky-top{
+.sticky-top {
   position: sticky;
-  background-color: #233D4D;
+  background-color: #233d4d;
 }
 
-.page-logo{
-  color: #FFFFFF !important;
+.page-logo {
+  color: #ffffff !important;
   margin-left: 5%;
 }
 
-.logo-pic{
+.logo-pic {
   height: 50px;
 }
 
-.nav-tabs{
-  color: #FFFFFF !important;
+.nav-tabs {
+  color: #ffffff !important;
   border: none !important;
   margin-left: 30px;
 }
 
-#basic-navbar-nav{
-  flex-direction: row-reverse; 
+#basic-navbar-nav {
+  flex-direction: row-reverse;
   margin-right: 5%;
 }
 
-#basic-navbar-nav :hover{
-  transform:scale(1.1);
+#basic-navbar-nav :hover {
+  transform: scale(1.1);
 }
 
-.welcome-msg{
-  color: #FFFFFF;
+.welcome-msg {
+  color: #ffffff;
   margin-top: 8px;
 }
 
-.toggle{
+.toggle {
   background-color: white !important;
 }
 
 @media only screen and (max-width: 550px) {
-  .nav-section {
-    width: 100%
+  .logo-pic {
+    height: 40px;
   }
 }

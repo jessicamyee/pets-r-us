@@ -53,7 +53,7 @@ const SignIn = (props) => {
     } else {
       return (
         <button type="submit" className="signin-btn">
-          Sign In
+          SIGN IN
         </button>
       );
     }
@@ -67,9 +67,10 @@ const SignIn = (props) => {
         <h3 className="sign-in-header">Sign-in to your Account</h3>
         <div className="signin-fields">
           <form onSubmit={onSignIn}>
-            <div className="input-field">
+            <div className="individ-signin-input-container">
               <input
                 required
+                className="individual-signin-input"
                 type="text"
                 name="username"
                 value={username}
@@ -78,9 +79,10 @@ const SignIn = (props) => {
               />
             </div>
 
-            <div className="input-field">
+            <div className="individ-signin-input-container">
               <input
                 required
+                className="individual-signin-input"
                 name="password"
                 value={password}
                 type="password"

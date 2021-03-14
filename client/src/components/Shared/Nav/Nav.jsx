@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 
 const authenticatedOptions = (
   <>
+    <Nav.Link as={NavLink} to="/users/:id/" className="nav-tabs">
+      My Pets
+    </Nav.Link>
     <Nav.Link as={NavLink} to="/add-pet" className="nav-tabs">
       Add a Pet
     </Nav.Link>
@@ -36,9 +39,9 @@ const alwaysOptions = (
 //Old Logo src = https://i.imgur.com/MYeogFE.png
 const MainNav = ({ user }) => {
   return (
-    <Navbar className="nav-section" expand="lg" className="sticky-top">
+    <Navbar className="nav-section sticky-top" expand="lg" >
       <Navbar.Brand href="/" className="page-logo">
-        <img className="logo-pic" src="https://i.imgur.com/eTLFAD5.png"/>
+        <img className="logo-pic" src="https://i.imgur.com/eTLFAD5.png" alt="logo"/>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
       <Navbar.Collapse id="basic-navbar-nav">
