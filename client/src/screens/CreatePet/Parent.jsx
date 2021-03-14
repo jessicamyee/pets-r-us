@@ -90,7 +90,7 @@ export default class MasterForm extends React.Component {
       <React.Fragment>
         <div className="form-header">Add your animal to our community!</div>
         <div className="step-count">Step {this.state.currentStep} of 3!</div>
-<div className="submission-form">
+        <div className="submission-form">
         <form className="submission-form-template" onSubmit={this.handleSubmit}>
 
           <Step1
@@ -115,7 +115,7 @@ export default class MasterForm extends React.Component {
             type={this.state.type}
           />
           <div className="form-buttons">
-          {this.previousButton()}
+              {this.previousButton()}
               {this.nextButton()}
               <button className="submit-button">Submit</button>
 
