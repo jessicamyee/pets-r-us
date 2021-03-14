@@ -19,6 +19,9 @@ const MyPets = (props) => {
     return <div>Loading...Don't stop Retrieving, Don't stop feline</div>;
   }
   console.log(props.user._id);
+
+  console.log(allMyPets[0]);
+
   const userPets = allMyPets.filter((pet) => props.user._id === pet.userId);
 
   return (
