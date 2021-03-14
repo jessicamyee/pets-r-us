@@ -49,7 +49,7 @@ const PetDetail = (props) => {
             >
               Click here to learn more about me
             </a>
-            {props.user ? (
+            {props.user && pet.userId === props.user._id && (
               <>
                 <div className="button-container">
                   <button className="edit-button">
@@ -62,7 +62,7 @@ const PetDetail = (props) => {
                   </button>
                 </div>
               </>
-            ) : null}
+            )}
           </div>
         </div>
         <div className="detail-description">
