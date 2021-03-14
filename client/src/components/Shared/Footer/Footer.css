@@ -13,14 +13,17 @@ footer {
 
 
 .logo-footer{
-  height: 50px;
+  height: 55px;
   margin-top: 9px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .person-footer {
   display: inline-block;
   margin: 5px 20px;
   text-align: center;
+  width: 150px;
 }
 
 .member-name {
