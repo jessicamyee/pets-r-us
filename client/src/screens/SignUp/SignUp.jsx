@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./SignUp.css";
 import { signUp, signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
@@ -6,6 +6,7 @@ import Layout from "../../components/Shared/Layout/Layout";
 
 const SignUp = (props) => {
   const history = useHistory();
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const [form, setForm] = useState({
     username: "",
@@ -15,6 +16,15 @@ const SignUp = (props) => {
     isError: false,
     errorMsg: "",
   });
+
+  const checkForErrors = () => {
+    if (password !== passwordConfirmation) {
+      setErrorMessage("Sorry, passwords do not match!");
+      return true;
+    }
+    setErrorMessage(null);
+    return false;
+  };
 
   const handleChange = (event) =>
     setForm({
@@ -26,20 +36,24 @@ const SignUp = (props) => {
     event.preventDefault();
     const { setUser } = props;
 
-    signUp(form)
-      .then(() => signIn(form))
-      .then((user) => setUser(user))
-      .then(() => history.push("/"))
-      .catch((error) => {
-        console.error(error);
-        setForm({
-          email: "",
-          password: "",
-          passwordConfirmation: "",
-          isError: true,
-          errorMsg: "Sign Up Details Invalid",
+    const hasError = checkForErrors();
+
+    if (!hasError) {
+      signUp(form)
+        .then(() => signIn(form))
+        .then((user) => setUser(user))
+        .then(() => history.push("/"))
+        .catch((error) => {
+          console.error(error);
+          setForm({
+            email: "",
+            password: "",
+            passwordConfirmation: "",
+            isError: true,
+            errorMsg: "Sign Up Details Invalid",
+          });
         });
-      });
+    }
   };
 
   const renderError = () => {
@@ -52,18 +66,20 @@ const SignUp = (props) => {
       );
     } else {
       return (
-        <button type="submit" className="signup-btn">
-          Sign Up
-        </button>
+        <div>
+          {errorMessage && <p id="error-message">{errorMessage}</p>}
+          <button type="submit" className="signup-btn">
+            Sign Up
+          </button>
+        </div>
       );
     }
   };
 
   const { email, username, password, passwordConfirmation } = form;
 
-
   return (
-    <Layout user={props.user} backgroundColor={'#82B0A2'}>
+    <Layout user={props.user} backgroundColor={"#82B0A2"}>
       <div className="form-container-sign-up">
         <h3 className="sign-up-header">Sign-Up For An Account</h3>
         <div className="signup-fields">
