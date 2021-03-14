@@ -7,7 +7,7 @@
   font-size: 42px;
 }
 
-input{
+.individual-signin-input {
   width: 500px;
   height: 35px;
   padding: 10px;
@@ -15,7 +15,7 @@ input{
   border-color: #18101069;
 }
 
-.input-field {
+.individ-signin-input-container {
   margin-bottom: 30px;
 }
 
@@ -54,7 +54,7 @@ input{
     font-size: 28px;
   }
 
-  input{
+  .individual-signin-input{
     width: 350px;
   }
 
@@ -70,7 +70,7 @@ input{
 
 @media only screen and (max-width: 483px) {
 
-  input{
+  .individual-signin-input{
     width: 220px;
   }
 
