@@ -13,31 +13,41 @@ export default class Carousel extends React.Component {
         className="our-carousel"
         naturalSlideWidth={100}
         naturalSlideHeight={125}
-        totalSlides={3}
+        totalSlides={4}
       >
 
         <Slider>
           <Slide index={0}>
-            <Link to="/pets/604bbbb56a70295025d18382">
+            <Link to="/pets/604bbbb56a70295025d18385">
             <img
               className="carousel-image"
-              tag='div'
-              isBgImage
-              src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50708836/1/?bust=1615398914&width=1080"
-                alt="animal"
-            />
-            <div className="pet-name">Casper</div>
-              
+              src="https://i.imgur.com/4Hta9Pn.png"
+              alt="animal-blue"
+            />              
             </Link>
           </Slide>
           <Slide index={1}>
-            <Link to="/pets/604bbbb56a70295025d18383">
-              <img className="carousel-image" src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50829869/2/?bust=1615479317&width=1080" alt="animal" />
+            <Link to="/pets/604bc417a4d94000043d28f5">
+              <img
+                className="carousel-image"
+                src="https://i.imgur.com/3KSWiDB.png"
+                alt="animal-ollie" />
             </Link>
           </Slide>
           <Slide index={2}>
-            <Link to="/pets/604bbbb56a70295025d18385">
-              <img className="carousel-image" src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48885469/1/?bust=1614728729&width=720" alt="animal" />
+            <Link to="/pets/604bc417a4d94000043d28f7">
+              <img
+                className="carousel-image"
+                src="https://i.imgur.com/FllIf6K.png"
+                alt="animal-hollis" />
+            </Link>
+          </Slide>
+          <Slide index={3}>
+            <Link to="/pets/604bc417a4d94000043d28f4">
+              <img
+                className="carousel-image"
+                src="https://i.imgur.com/eiKG7Ui.png"
+                alt="animal-odie" />
             </Link>
           </Slide>
           </Slider>
