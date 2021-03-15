@@ -79,11 +79,11 @@ const SignUp = (props) => {
   const { email, username, password, passwordConfirmation } = form;
 
   return (
-    <Layout user={props.user} backgroundColor={"#71A9B0"}>
+    <Layout user={props.user}>
       <div className="form-container-sign-up">
         <div className="signup-head-section">
           <h3 className="sign-up-header">Create Account</h3>
-          <span className="paw-like sign-up-paw">&#128062;</span>
+          {/* <span className="paw-like sign-up-paw">&#128062;</span> */}
         </div>
         <div className="signup-fields">
           <form onSubmit={onSignUp}>
