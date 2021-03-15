@@ -2,10 +2,11 @@ import React from "react";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
-import './Parent.css';
+import "./Parent.css";
 import { createPet } from "../../services/pets";
+import { withRouter } from 'react-router-dom';
 
-export default class MasterForm extends React.Component {
+class MasterForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +19,7 @@ export default class MasterForm extends React.Component {
       description: "",
       imgURL: "",
       type: "",
-      gender:"",
+      gender: "",
     };
   }
 
@@ -30,9 +31,11 @@ export default class MasterForm extends React.Component {
   };
   handleSubmit = async (event) => {
     event.preventDefault();
-    await createPet(this.state) 
-    }
-  
+    await createPet(this.state, this.props.user._id);
+    const { history } = this.props;
+    if(history) history.push('/pets')
+  };
+
   _next = () => {
     let currentStep = this.state.currentStep;
     currentStep = currentStep >= 2 ? 3 : currentStep + 1;
@@ -53,11 +56,7 @@ export default class MasterForm extends React.Component {
     let currentStep = this.state.currentStep;
     if (currentStep !== 1) {
       return (
-        <button
-          className="prev-secondary"
-          type="button"
-          onClick={this._prev}
-        >
+        <button className="prev-secondary" type="button" onClick={this._prev}>
           Previous
         </button>
       );
@@ -69,11 +68,7 @@ export default class MasterForm extends React.Component {
     let currentStep = this.state.currentStep;
     if (currentStep < 3) {
       return (
-        <button
-          className="next-button"
-          type="button"
-          onClick={this._next}
-        >
+        <button className="next-button" type="button" onClick={this._next}>
           Next
         </button>
       );
@@ -81,39 +76,64 @@ export default class MasterForm extends React.Component {
     return null;
   }
 
+  _submit = () => {
+    let currentStep = this.state.currentStep;
+    currentStep = currentStep === 3;
+    this.setState({
+      currentStep: currentStep,
+    });
+  };
+
+  submitButton() {
+    if (this.state.currentStep === 3)
+    {
+      return(
+    <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
+    )}
+  }
+
+  
+
   render() {
+
     return (
       <React.Fragment>
         <div className="form-header">Add your animal to our community!</div>
         <div className="step-count">Step {this.state.currentStep} of 3!</div>
-
-        <form className="submission-form" onSubmit={this.handleSubmit}>
-
-          <Step1
-            currentStep={this.state.currentStep}
-            handleChange={this.handleChange}
-            name={this.state.name}
-            breed={this.state.breed}
-            price={this.state.price}
-            gender={this.state.gender}
-          />
-          <Step2
-            currentStep={this.state.currentStep}
-            handleChange={this.handleChange}
-            age={this.state.age}
-            password={this.state.link}
-            description={this.state.description}
-          />
-          <Step3
-            currentStep={this.state.currentStep}
-            handleChange={this.handleChange}
-            imgURL={this.state.imgURL}
-            type={this.state.type}
-          />
-          {this.previousButton()}
-          {this.nextButton()}
-        </form>
+        <div className="submission-form">
+          <form
+            className="submission-form-template"
+          >
+            <Step1
+              currentStep={this.state.currentStep}
+              handleChange={this.handleChange}
+              name={this.state.name}
+              breed={this.state.breed}
+              price={this.state.price}
+              gender={this.state.gender}
+            />
+            <Step2
+              currentStep={this.state.currentStep}
+              handleChange={this.handleChange}
+              age={this.state.age}
+              password={this.state.link}
+              description={this.state.description}
+            />
+            <Step3
+              currentStep={this.state.currentStep}
+              handleChange={this.handleChange}
+              imgURL={this.state.imgURL}
+              type={this.state.type}
+            />
+            <div className="form-buttons">
+              {this.previousButton()}
+              {this.nextButton()}
+              {this.submitButton()}
+            </div>
+          </form>
+        </div>
       </React.Fragment>
     );
   }
 }
+export default withRouter(MasterForm);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SignIn.css";
 import { signIn } from "../../services/users";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Layout from "../../components/Shared/Layout/Layout";
 
 const SignIn = (props) => {
@@ -51,21 +51,29 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button type="submit" className="signin-btn" >Sign In</button>;
+      return (
+        <button type="submit" className="signin-btn">
+          SIGN IN
+        </button>
+      );
     }
   };
 
   const { username, password } = form;
 
   return (
-    <Layout user={props.user} backgroundColor={'#82B0A2'}>
+    <Layout user={props.user}>
       <div className="form-container-sign-in">
-        <h3 className="sign-in-header">Sign-in to your Account</h3>
+        <div className="signin-head-section">
+          <h3 className="sign-in-header">Welcome Back!</h3>
+          <span className="paw-like sign-in-paw">&#128062;</span>
+        </div>
         <div className="signin-fields">
           <form onSubmit={onSignIn}>
-            <div className="input-field">
+            <div className="individ-signin-input-container">
               <input
                 required
+                className="individual-signin-input"
                 type="text"
                 name="username"
                 value={username}
@@ -74,9 +82,10 @@ const SignIn = (props) => {
               />
             </div>
 
-            <div className="input-field">
+            <div className="individ-signin-input-container">
               <input
                 required
+                className="individual-signin-input"
                 name="password"
                 value={password}
                 type="password"
@@ -85,6 +94,9 @@ const SignIn = (props) => {
               />
             </div>
             {renderError()}
+            <Link to={"/sign-up"} className="redirect-to-signup">
+              <p>Don’t have an account? Sign up here!</p>
+            </Link>
           </form>
         </div>
       </div>

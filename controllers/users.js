@@ -1,6 +1,7 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
+const Pet = require("../models/pet");
 const db = require("../db/connection");
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 const SALT_ROUNDS = 11;
@@ -19,6 +20,7 @@ const signUp = async (req, res) => {
     const payload = {
       username: user.username,
       email: user.email,
+      _id: user._id,
     };
     const token = jwt.sign(payload, TOKEN_KEY);
     res.status(201).json({ token });
@@ -34,6 +36,7 @@ const signIn = async (req, res) => {
       const payload = {
         username: user.username,
         email: user.email,
+        _id: user._id,
       };
       const token = jwt.sign(payload, TOKEN_KEY);
       res.status(201).json({ token });
@@ -55,10 +58,35 @@ const verify = async (req, res) => {
     res.status(401).send("Not Authorized");
   }
 };
-const changePassword = async (req, res) => {};
+
+const getUser = async (req, res) => {
+  try {
+    const users = await User.findById(req.params.id).populate("pets");
+    console.log(users);
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+const usersPets = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const pet = new Pet(req.body);
+    pet.userId = user._id;
+    await pet.save();
+    user.pets.push(pet);
+    await user.save();
+    res.status(201).json(pet);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 module.exports = {
   signUp,
   signIn,
   verify,
-  changePassword,
+  getUser,
+  usersPets,
 };
