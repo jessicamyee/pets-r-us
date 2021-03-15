@@ -99,7 +99,7 @@ class MasterForm extends React.Component {
     return (
       <React.Fragment>
         <div className="form-header">Add your animal to our community!</div>
-        <div className="step-count">Step {this.state.currentStep} of 3!</div>
+        <div className="step-count">Step {this.state.currentStep} of 3</div>
         <div className="submission-form">
           <form
             className="submission-form-template"

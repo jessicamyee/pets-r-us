@@ -9,14 +9,16 @@
 .form-buttons {
   display: flex;
   justify-content: space-evenly;
-
 }
+
 .form-header{
   display: flex;
   justify-content: center;
   font-family: "Pacifico", cursive;
   font-size: 60px;
   margin-bottom: 20px;
+  color: #233D4D;
+  margin-top: 20px;
 }
 
 .step-count{
@@ -24,7 +26,7 @@
   justify-content: center;
   margin-bottom: 20px;
   font-size: 45px;
-
+  color: #233D4D;
 }
 
 .next-button, .prev-secondary  {
@@ -40,7 +42,6 @@
   background-color: whitesmoke;
   color: #233D4D;
 }
-
 
 @media screen and (max-width: 375px){
 .form-header{
