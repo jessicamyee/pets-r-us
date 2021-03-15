@@ -18,7 +18,7 @@ export default class Carousel extends React.Component {
 
         <Slider>
           <Slide index={0}>
-            <Link to="/pets/604bbbb56a70295025d18385">
+            <Link to="/pets/604bc417a4d94000043d28f6">
             <img
               className="carousel-image"
               src="https://i.imgur.com/4Hta9Pn.png"
