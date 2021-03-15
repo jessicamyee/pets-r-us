@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import "./SignUp.css";
 import { signUp, signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
@@ -79,14 +79,17 @@ const SignUp = (props) => {
   const { email, username, password, passwordConfirmation } = form;
 
   return (
-    <Layout user={props.user} backgroundColor={"#82B0A2"}>
+    <Layout user={props.user} backgroundColor={"#71A9B0"}>
       <div className="form-container-sign-up">
-        <h3 className="sign-up-header">Sign-Up For An Account</h3>
+        <div className="signup-head-section">
+          <h3 className="sign-up-header">Create Account</h3>
+          <span className="paw-like sign-up-paw">&#128062;</span>
+        </div>
         <div className="signup-fields">
           <form onSubmit={onSignUp}>
             <div className="signup-input-container">
               <input
-                className= "individual-signup-input"
+                className="individual-signup-input"
                 required
                 type="email"
                 name="email"

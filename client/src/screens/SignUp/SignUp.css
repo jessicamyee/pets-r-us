@@ -1,10 +1,25 @@
+.form-container-sign-up{
+  background: -webkit-linear-gradient(top, #6082CA, #71A9B0);
+  background: -moz-linear-gradient(top, #6082CA, #71A9B0);
+  background: linear-gradient(to bottom, #6082CA, #71A9B0);
+}
+
+.signup-head-section{
+  text-align: center;
+}
+
 .sign-up-header{
   color: #1A2C38;
   text-align: center;
   padding-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-family: "Pacifico", cursive;
   font-size: 42px;
+  display: inline-block;
+}
+
+.sign-up-paw{
+  margin-left: 20px;
 }
 
 .individual-signup-input{
@@ -29,6 +44,7 @@
   margin-left:auto;
   margin-right: auto;
   border-radius: 5px;
+  box-shadow: 5px 10px 5px;
 }
 
 .signup-btn{
