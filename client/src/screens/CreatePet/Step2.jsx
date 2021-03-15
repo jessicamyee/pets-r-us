@@ -36,7 +36,7 @@ function Step2(props) {
         onChange={props.handleChange}
         maxlength="500"
         required
-      />
+        />
     </div>
   );
 }

@@ -23,7 +23,6 @@ function Step3(props) {
         <option value="cat">Kitty</option>
         <option value="rabbit">Bunny</option>  
       </select>
-      
     </div>
   );
 }
