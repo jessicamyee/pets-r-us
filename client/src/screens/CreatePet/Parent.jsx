@@ -116,7 +116,7 @@ class MasterForm extends React.Component {
               currentStep={this.state.currentStep}
               handleChange={this.handleChange}
               price={this.state.price}
-              password={this.state.link}
+              link={this.state.link}
               description={this.state.description}
             />
             <Step3
