@@ -1,25 +1,30 @@
-.form-container-sign-in{
-  background: -webkit-linear-gradient(top, #6082CA, #71A9B0);
+.form-container-sign-in {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1568043210943-0e8aac4b9734?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGtpdHRlbnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: -webkit-linear-gradient(top, #6082CA, #71A9B0);
   background: -moz-linear-gradient(top, #6082CA, #71A9B0);
-  background: linear-gradient(to bottom, #6082CA, #71A9B0);
+  background: linear-gradient(to bottom, #6082CA, #71A9B0); */
 }
 
-.signin-head-section{
+.signin-head-section {
   text-align: center;
 }
 
-
-.sign-in-header{
-  color: #1A2C38;
+.sign-in-header {
+  color: #1a2c38;
   text-align: center;
   padding-top: 30px;
   margin-bottom: 50px;
   font-family: "Pacifico", cursive;
   font-size: 42px;
   display: inline-block;
+  margin-top: 50px;
 }
 
-.sign-in-paw{
+.sign-in-paw {
   margin-left: 20px;
 }
 
@@ -35,68 +40,65 @@
   margin-bottom: 30px;
 }
 
-.signin-fields{
+.signin-fields {
   display: block;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: white;
   width: 600px;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
   box-shadow: 5px 10px 5px;
 }
 
-.signin-btn{
+.signin-btn {
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 5px;
   padding: 7px;
-  background-color: #233D4D;
-  color: #FFFFFF;
+  background-color: #233d4d;
+  color: #ffffff;
   width: 200px;
 }
 
 .signin-btn:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 
-.redirect-to-signup :hover{
-  transform:scale(1.05);
+.redirect-to-signup :hover {
+  transform: scale(1.05);
 }
-
 
 @media only screen and (max-width: 658px) {
-  .sign-in-header{
+  .sign-in-header {
     font-size: 28px;
   }
 
-  .individual-signin-input{
+  .individual-signin-input {
     width: 350px;
   }
 
-  .signin-fields{
+  .signin-fields {
     width: 450px;
   }
 
-  .signin-btn{
+  .signin-btn {
     width: 100px;
   }
 }
 
-
 @media only screen and (max-width: 483px) {
-
-  .individual-signin-input{
+  .individual-signin-input {
     width: 220px;
   }
 
-  .signin-fields{
+  .signin-fields {
     width: 320px;
   }
 
-  .signin-btn{
+  .signin-btn {
     width: 100px;
   }
 }

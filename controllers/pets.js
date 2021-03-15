@@ -12,6 +12,7 @@ const getPets = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
 const getPet = async (req, res) => {
   try {
     const { id } = req.params;
@@ -87,6 +88,7 @@ const deletePet = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
 module.exports = {
   createPet,
   getPets,
