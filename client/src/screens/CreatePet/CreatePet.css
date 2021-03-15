@@ -1,41 +1,11 @@
-.create-pet {
-  background-color: orange;
-  background: linear-gradient(-45deg, #ee7752, red, #d1c517, magenta);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-}
-
-.brand-statement {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 60px;
-}
-
 .form-images {
   opacity: .8;
 }
 
 .form-images:hover {
   opacity: 1;
-  transition: all 1s ease-in;
-
-}
-
-.form-images:hover {
-  opacity: 1;
   transition: all 1s ease;
 
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 @media screen and (max-width: 375px){
@@ -51,6 +21,10 @@
     display: flex;
     font-size: 20px;
     font-weight: 400;
+  }
+  .form-images{
+    width: 375px;
+    height: 375px;
   }
 }
 
