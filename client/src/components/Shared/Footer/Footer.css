@@ -71,5 +71,24 @@ footer {
   .person-footer {
     width: 40px;
   }
+}
 
+@media only screen and (max-width: 380px) {
+
+  footer {
+    padding-top: 3px;
+  }
+
+  .logo-footer{
+    height: 24px;
+  }
+
+  .footer-photo-git {
+    height: 12px;
+    width: 12px;
+  }
+
+  .person-footer {
+    width: 30px;
+  }
 }
