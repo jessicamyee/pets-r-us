@@ -59,8 +59,6 @@ const verify = async (req, res) => {
   }
 };
 
-<<<<<<< HEAD
-=======
 const getUser = async (req, res) => {
   try {
     const users = await User.findById(req.params.id).populate("pets");
@@ -85,14 +83,10 @@ const usersPets = async (req, res) => {
   }
 };
 
->>>>>>> f4ebbaa9b8b116fc532a995ca786e1646b67fbda
 module.exports = {
   signUp,
   signIn,
   verify,
-<<<<<<< HEAD
-=======
   getUser,
   usersPets,
->>>>>>> f4ebbaa9b8b116fc532a995ca786e1646b67fbda
 };
