@@ -96,8 +96,6 @@ class MasterForm extends React.Component {
 
   render() {
 
-    const { history } = this.props;
-
     return (
       <React.Fragment>
         <div className="form-header">Add your animal to our community!</div>

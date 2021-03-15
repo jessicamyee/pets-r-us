@@ -42,3 +42,18 @@
 }
 
 
+@media screen and (max-width: 375px){
+.form-header{
+  display: flex; 
+  flex-wrap: wrap;
+  font-size: 48px;
+}
+
+.step-count{
+  font-size: 32px;
+}
+
+  .submission-form-template{
+  width: 360px;
+}
+}
