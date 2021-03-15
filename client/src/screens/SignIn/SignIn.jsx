@@ -62,11 +62,11 @@ const SignIn = (props) => {
   const { username, password } = form;
 
   return (
-    <Layout user={props.user} backgroundColor={"#71A9B0"}>
+    <Layout user={props.user}>
       <div className="form-container-sign-in">
         <div className="signin-head-section">
-        <h3 className="sign-in-header">Welcome Back!</h3>
-        <span className="paw-like sign-in-paw">&#128062;</span>
+          <h3 className="sign-in-header">Welcome Back!</h3>
+          <span className="paw-like sign-in-paw">&#128062;</span>
         </div>
         <div className="signin-fields">
           <form onSubmit={onSignIn}>
