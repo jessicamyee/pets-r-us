@@ -51,7 +51,7 @@ const App = () => {
         <Route exact path="/pets/:id">
           <PetDetail user={user} />
         </Route>
-        <Route exact path="/users/:id">
+        <Route exact path="/users/:id/">
           <MyPets user={user} />
         </Route>
       </Switch>

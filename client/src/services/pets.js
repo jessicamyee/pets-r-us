@@ -18,9 +18,9 @@ export const getPet = async (id) => {
   }
 };
 
-export const createPet = async (pet) => {
+export const createPet = async (pet, id) => {
   try {
-    const response = await api.post("/pets", pet);
+    const response = await api.post(`/users/${id}/pets`, pet);
     return response.data;
   } catch (error) {
     throw error;

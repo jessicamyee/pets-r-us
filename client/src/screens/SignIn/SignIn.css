@@ -1,22 +1,37 @@
+.form-container-sign-in{
+  background: -webkit-linear-gradient(top, #6082CA, #71A9B0);
+  background: -moz-linear-gradient(top, #6082CA, #71A9B0);
+  background: linear-gradient(to bottom, #6082CA, #71A9B0);
+}
+
+.signin-head-section{
+  text-align: center;
+}
+
+
 .sign-in-header{
   color: #1A2C38;
   text-align: center;
   padding-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-family: "Pacifico", cursive;
   font-size: 42px;
+  display: inline-block;
 }
 
-input{
+.sign-in-paw{
+  margin-left: 20px;
+}
+
+.individual-signin-input {
   width: 500px;
   height: 35px;
   padding: 10px;
   border-radius: 3.5px;
   border-color: #18101069;
-
 }
 
-.input-field {
+.individ-signin-input-container {
   margin-bottom: 30px;
 }
 
@@ -26,9 +41,11 @@ input{
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: white;
-  width: 45%;
+  width: 600px;
   margin-left:auto;
   margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 5px 10px 5px;
 }
 
 .signin-btn{
@@ -47,4 +64,39 @@ input{
 
 .redirect-to-signup :hover{
   transform:scale(1.05);
+}
+
+
+@media only screen and (max-width: 658px) {
+  .sign-in-header{
+    font-size: 28px;
+  }
+
+  .individual-signin-input{
+    width: 350px;
+  }
+
+  .signin-fields{
+    width: 450px;
+  }
+
+  .signin-btn{
+    width: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 483px) {
+
+  .individual-signin-input{
+    width: 220px;
+  }
+
+  .signin-fields{
+    width: 320px;
+  }
+
+  .signin-btn{
+    width: 100px;
+  }
 }
