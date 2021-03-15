@@ -1,12 +1,12 @@
-// import React, { useState } from 'react'
 import React from "react";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import "./Parent.css";
 import { createPet } from "../../services/pets";
+import { withRouter } from 'react-router-dom';
 
-export default class MasterForm extends React.Component {
+class MasterForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,6 +32,8 @@ export default class MasterForm extends React.Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     await createPet(this.state, this.props.user._id);
+    const { history } = this.props;
+    if(history) history.push('/pets')
   };
 
   _next = () => {
@@ -75,6 +77,9 @@ export default class MasterForm extends React.Component {
   }
 
   render() {
+
+    const { history } = this.props;
+
     return (
       <React.Fragment>
         <div className="form-header">Add your animal to our community!</div>
@@ -82,7 +87,6 @@ export default class MasterForm extends React.Component {
         <div className="submission-form">
           <form
             className="submission-form-template"
-            onSubmit={this.handleSubmit}
           >
             <Step1
               currentStep={this.state.currentStep}
@@ -108,7 +112,7 @@ export default class MasterForm extends React.Component {
             <div className="form-buttons">
               {this.previousButton()}
               {this.nextButton()}
-              <button className="submit-button">Submit</button>
+              <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
             </div>
           </form>
         </div>
@@ -116,3 +120,4 @@ export default class MasterForm extends React.Component {
     );
   }
 }
+export default withRouter(MasterForm);
