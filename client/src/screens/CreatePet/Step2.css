@@ -1,0 +1,17 @@
+.form-group-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-price {
+ margin-bottom: 20px;
+}
+
+.create-link {
+  margin-bottom: 20px;
+}
+
+.create-description {
+  width: 500px;
+  margin-bottom: 20px;
+}

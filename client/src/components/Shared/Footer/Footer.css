@@ -5,10 +5,6 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0; */
   width: 100%;
   background-color: #233D4D;
   padding-top: 20px;
@@ -17,13 +13,16 @@ footer {
 
 
 .logo-footer{
-  height: 45px;
+  height: 55px;
+  margin-top: 9px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .person-footer {
-  display: inline-block;
   margin: 5px 20px;
   text-align: center;
+  width: 150px;
 }
 
 .member-name {
@@ -35,4 +34,42 @@ footer {
 .footer-photo-git {
   height: 20px;
   width: 20px;
+}
+
+@media only screen and (max-width: 595px) {
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo-footer{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .person-footer {
+    margin: 5px 20px;
+    width: 150px;
+  }
+
+  .member-name {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .logo-footer{
+    height: 30px;
+  }
+
+  .footer-photo-git {
+    height: 15px;
+    width: 15px;
+  }
+
+  .person-footer {
+    width: 40px;
+  }
+
 }

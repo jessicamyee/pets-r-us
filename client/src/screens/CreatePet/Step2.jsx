@@ -1,41 +1,44 @@
- function Step2(props) {
+import './Step2.css'
+
+
+function Step2(props) {
   if (props.currentStep !== 2) {
-    return null
+    return null;
   }
-  return(
+  return (
     <div className="form-group-2">
-      {/* <label htmlFor="price">Enter Adoption Fee (USD)</label> */}
       <input
-        className="form-control"
+        className="create-price"
         id="price"
         name="price"
         type="text"
         placeholder="Enter Adoption Fee (USD)"
         value={props.price}
         onChange={props.handleChange}
+        required
       />
-      {/* <label htmlFor="link">Link</label> */}
       <input
-        className="form-control"
+        className="create-link"
         id="link"
         name="link"
         type="link"
-        placeholder="Enter Link"
+        placeholder="Enter Adoption Link"
         value={props.link}
         onChange={props.handleChange}
-        />
-      {/* <label htmlFor="description">Description</label> */}
-      <input
-        className="form-control"
-        id="description"
+        required
+      />
+      <textarea
+        className="create-description"
         name="description"
-        type="text"
-        placeholder="Enter Description"
+        rows={5}
+        placeholder="Enter Description (500 character limit)"
         value={props.description}
         onChange={props.handleChange}
-        />  
+        maxlength="500"
+        required
+      />
     </div>
   );
- }
+}
 
- export default Step2
+export default Step2;

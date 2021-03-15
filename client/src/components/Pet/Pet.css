@@ -6,7 +6,8 @@
 .all-pets-container-search {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  padding: 20px;
+  background-color: #cfdbd5;
 }
 
 .all-pets-container {
@@ -23,11 +24,16 @@
   "S"
   ;
   width: 330px;
-  height: 450px;
+  height: 485px;
   border: 1px solid #233D4D;
   border-radius: 3px;
   padding: 1vw;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  opacity: .9;
+}
+.all-pet-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 20px 10px 20px;
+  opacity: 1;
 }
 
 .all-imgURL {
@@ -45,6 +51,7 @@
   padding:10px;
   justify-self: center;
   color: #233D4D;
+  font-family: "Montserrat", sans-serif;
 }
 
 .all-breed {
@@ -53,6 +60,7 @@
   justify-self: center;
   margin-bottom: 10px;
   color: #233D4D;
+  font-family: "Montserrat", sans-serif;
 }
 
 .more {
@@ -60,7 +68,7 @@
   text-decoration: none;
   justify-self: center;
   color: #233D4D;
-  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 :visited {

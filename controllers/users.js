@@ -1,6 +1,7 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
+const Pet = require("../models/pet");
 const db = require("../db/connection");
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 const SALT_ROUNDS = 11;
@@ -58,8 +59,40 @@ const verify = async (req, res) => {
   }
 };
 
+<<<<<<< HEAD
+=======
+const getUser = async (req, res) => {
+  try {
+    const users = await User.findById(req.params.id).populate("pets");
+    console.log(users);
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+const usersPets = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const pet = new Pet(req.body);
+    pet.userId = user._id;
+    await pet.save();
+    user.pets.push(pet);
+    await user.save();
+    res.status(201).json(pet);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+>>>>>>> f4ebbaa9b8b116fc532a995ca786e1646b67fbda
 module.exports = {
   signUp,
   signIn,
   verify,
+<<<<<<< HEAD
+=======
+  getUser,
+  usersPets,
+>>>>>>> f4ebbaa9b8b116fc532a995ca786e1646b67fbda
 };

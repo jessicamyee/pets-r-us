@@ -1,19 +1,30 @@
+.create-image-address {
+  margin-bottom: 20px;
+}
+
+.create-animal-type{
+  margin-bottom: 20px;
+  width: 200px;
+}
+
 .form-group-3{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 .form-control{
-  /* display: flex; */
   justify-content: center;
   padding-top: 10px;
 }
 
-
 .submit-button {
-  /* display: flex; */
   justify-content: center;
-  background-color: greenyellow;
-  /* margin-top: 30px; */
+  background-color: rgb(130, 176, 162);
+  color: whitesmoke;
+  width: 100px;
 }
 
+.submit-button:hover {
+  justify-content: center;
+  background-color: whitesmoke;
+  color: #233D4D;
+}
