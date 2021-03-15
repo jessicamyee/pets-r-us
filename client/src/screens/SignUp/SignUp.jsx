@@ -79,7 +79,7 @@ const SignUp = (props) => {
   const { email, username, password, passwordConfirmation } = form;
 
   return (
-    <Layout user={props.user} backgroundColor={"#82B0A2"}>
+    <Layout user={props.user} backgroundColor={"#71A9B0"}>
       <div className="form-container-sign-up">
         <h3 className="sign-up-header">Sign-Up For An Account</h3>
         <div className="signup-fields">
