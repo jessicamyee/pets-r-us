@@ -4,6 +4,10 @@
   background: linear-gradient(to bottom, #6082CA, #71A9B0);
 }
 
+.signup-head-section{
+  text-align: center;
+}
+
 .sign-up-header{
   color: #1A2C38;
   text-align: center;
@@ -11,6 +15,11 @@
   margin-bottom: 50px;
   font-family: "Pacifico", cursive;
   font-size: 42px;
+  display: inline-block;
+}
+
+.sign-up-paw{
+  margin-left: 20px;
 }
 
 .individual-signup-input{

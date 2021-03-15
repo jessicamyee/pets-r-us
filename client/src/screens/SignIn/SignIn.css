@@ -4,6 +4,10 @@
   background: linear-gradient(to bottom, #6082CA, #71A9B0);
 }
 
+.signin-head-section{
+  text-align: center;
+}
+
 
 .sign-in-header{
   color: #1A2C38;
@@ -12,6 +16,11 @@
   margin-bottom: 50px;
   font-family: "Pacifico", cursive;
   font-size: 42px;
+  display: inline-block;
+}
+
+.sign-in-paw{
+  margin-left: 20px;
 }
 
 .individual-signin-input {
