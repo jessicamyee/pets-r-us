@@ -114,3 +114,10 @@
     font-size: 15px;
   }
 }
+
+@media only screen and (max-width: 380px){
+  .sign-up-header {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
