@@ -19,5 +19,6 @@
 @media screen and (max-width: 375px){
   .create-description {
     width: 360px;
+    background-color: rgb(179, 176, 176);
   }
   }
