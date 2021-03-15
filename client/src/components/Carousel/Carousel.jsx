@@ -1,4 +1,4 @@
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import React from "react";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './Carousel.css'
@@ -21,9 +21,14 @@ export default class Carousel extends React.Component {
             <Link to="/pets/604bbbb56a70295025d18382">
             <img
               className="carousel-image"
+              tag='div'
+              isBgImage
               src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50708836/1/?bust=1615398914&width=1080"
-              alt="animal" />
-          </Link>
+                alt="animal"
+            />
+            <div className="pet-name">Casper</div>
+              
+            </Link>
           </Slide>
           <Slide index={1}>
             <Link to="/pets/604bbbb56a70295025d18383">
