@@ -76,6 +76,24 @@ class MasterForm extends React.Component {
     return null;
   }
 
+  _submit = () => {
+    let currentStep = this.state.currentStep;
+    currentStep = currentStep === 3;
+    this.setState({
+      currentStep: currentStep,
+    });
+  };
+
+  submitButton() {
+    if (this.state.currentStep === 3)
+    {
+      return(
+    <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
+    )}
+  }
+
+  
+
   render() {
 
     const { history } = this.props;
@@ -112,7 +130,7 @@ class MasterForm extends React.Component {
             <div className="form-buttons">
               {this.previousButton()}
               {this.nextButton()}
-              <button className="submit-button" onClick={this.handleSubmit}>Submit</button>
+              {this.submitButton()}
             </div>
           </form>
         </div>
