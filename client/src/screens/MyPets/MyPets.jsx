@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Pet from "../../components/Pet/Pet";
 import Layout from "../../components/Shared/Layout/Layout";
 import { getPets } from "../../services/pets";
+import "./MyPets.css";
 
 const MyPets = (props) => {
   const [allMyPets, setAllMyPets] = useState([]);
@@ -25,8 +26,11 @@ const MyPets = (props) => {
   const userPets = allMyPets.filter((pet) => props.user._id === pet.userId);
 
   return (
-    <Layout user={props.user} backgroundColor={"#C9E4CA"}>
-      <div className="user-pets-object">
+    <Layout user={props.user}>
+      <div className="user-pets-container">
+        <div className="user-pets-text">
+          <div className="user-pets-heading"> My Fur-ever Friends </div>
+        </div>
         {userPets.map((pet, index) => (
           <Pet
             _id={pet._id}

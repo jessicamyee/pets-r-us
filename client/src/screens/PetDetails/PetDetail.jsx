@@ -29,7 +29,7 @@ const PetDetail = (props) => {
   };
 
   return (
-    <Layout user={props.user} backgroundColor={"#cddcdc"}>
+    <Layout user={props.user} backgroundColor={"rgb(207, 250, 218)"}>
       <div className="pet-detail">
         <div className="detail-top">
           <img className="pet-detail-image" src={pet.imgURL} alt={pet.name} />
