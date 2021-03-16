@@ -27,7 +27,7 @@
   height: 485px;
   border: 1px solid #233D4D;
   border-radius: 3px;
-  padding: 1vw;
+  padding: 15px;
   margin-bottom: 35px;
   margin-top: 10px;
   opacity: .9;
@@ -81,9 +81,11 @@
   text-decoration: none;
 }
 
-/* @media only screen and (min-width: 1050px) {
-  .all-pets-container-search {
-    margin-left: 100px;
-    margin-right: 100px;
+@media only screen and (max-width: 400px) {
+  .all-pet-card {
+    width: 280px;
   }
-} */
+  .all-imgURL {
+    width: 245px;
+  }
+}
