@@ -62,7 +62,6 @@ const verify = async (req, res) => {
 const getUser = async (req, res) => {
   try {
     const users = await User.findById(req.params.id).populate("pets");
-    console.log(users);
     res.json(users);
   } catch (error) {
     res.status(500).json({ error: error.message });
