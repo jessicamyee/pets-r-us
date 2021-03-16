@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./Footer.css"; 
 import {Link} from 'react-router-dom';
 
 const Footer = () => (
@@ -34,9 +34,13 @@ const Footer = () => (
       <p className="member-name">Chandler Manly</p>
     </div>
 
-    <Link to={'/'}>
+    <a href={'/'}>
       <img className="logo-footer" src="https://i.imgur.com/eTLFAD5.png" alt="logo" />
-    </Link>
+    </a>
+
+    {/* <Link to={'/'}>
+      <img className="logo-footer" src="https://i.imgur.com/eTLFAD5.png" alt="logo" />
+    </Link> */}
 
     <div className="shamma-footer person-footer">
       <a href="https://github.com/snqureshi" rel="noreferrer" target="_blank">

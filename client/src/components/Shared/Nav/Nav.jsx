@@ -35,8 +35,6 @@ const alwaysOptions = (
   </>
 );
 
-
-//Old Logo src = https://i.imgur.com/MYeogFE.png
 const MainNav = ({ user }) => {
   return (
     <Navbar className="nav-section sticky-top" expand="lg" >
@@ -45,7 +43,7 @@ const MainNav = ({ user }) => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav>
+        <Nav className="font-weight-bold">
           {user && <div className="welcome-msg">Welcome, {user.username}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}

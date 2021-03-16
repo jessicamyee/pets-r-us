@@ -83,11 +83,11 @@ const SignUp = (props) => {
       <div className="form-container-sign-up">
         <div className="signup-head-section">
           <h3 className="sign-up-header">Create Account</h3>
-          {/* <span className="paw-like sign-up-paw">&#128062;</span> */}
         </div>
         <div className="signup-fields">
           <form onSubmit={onSignUp}>
             <div className="signup-input-container">
+              <h5 className="signup-subhead">Set up your free account here!</h5>
               <input
                 className="individual-signup-input"
                 required
