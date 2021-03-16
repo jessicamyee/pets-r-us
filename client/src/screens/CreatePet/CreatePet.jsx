@@ -7,8 +7,10 @@ import Parent from "./Parent";
 const CreatePet = (props) => {
 
   return (
-    <Layout user={props.user}>
-      <Parent user={props.user} />
+    <Layout user={props.user} backgroundColor={"#84a59d"}>
+      <div className="parent-container">
+        <Parent user={props.user} />
+        </div>
     </Layout>
   );
 };

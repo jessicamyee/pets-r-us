@@ -34,3 +34,11 @@
   background-color: whitesmoke;
   color: #233D4D;
 }
+
+@media screen and (max-width: 375px){
+  .create-image-address {
+    width: 340px;
+    
+  }
+  }
+  

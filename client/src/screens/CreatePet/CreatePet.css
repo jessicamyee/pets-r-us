@@ -1,10 +1,5 @@
-.form-images {
-  opacity: .8;
-}
-
-.form-images:hover {
-  opacity: 1;
-  transition: all 1s ease;
+.parent-container {
+background-color: #84a59d;
 
 }
 
