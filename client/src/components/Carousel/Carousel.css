@@ -1,9 +1,10 @@
 
 .carousel-image {
   grid-area: I;
-  width:600px;
-  height:600px;
+  width:550px;
+  height: 550px;
   object-fit: cover;
+  border-radius: 3px;
 }
 
 @media only screen and (max-width: 600px) {
