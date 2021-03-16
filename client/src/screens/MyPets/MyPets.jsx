@@ -19,9 +19,6 @@ const MyPets = (props) => {
   if (!allMyPets || !props.user) {
     return <div>Loading...Don't stop Retrieving, Don't stop feline</div>;
   }
-  console.log(props.user._id);
-
-  console.log(allMyPets[0]);
 
   const userPets = allMyPets.filter((pet) => props.user._id === pet.userId);
 
@@ -31,16 +28,18 @@ const MyPets = (props) => {
         <div className="user-pets-text">
           <div className="user-pets-heading"> My Fur-ever Friends </div>
         </div>
-        {userPets.map((pet, index) => (
-          <Pet
-            _id={pet._id}
-            name={pet.name}
-            breed={pet.breed}
-            imgURL={pet.imgURL}
-            userId={pet.userId}
-            key={index}
-          />
-        ))}
+        <div className="user-pets">
+          {userPets.map((pet, index) => (
+            <Pet
+              _id={pet._id}
+              name={pet.name}
+              breed={pet.breed}
+              imgURL={pet.imgURL}
+              userId={pet.userId}
+              key={index}
+            />
+          ))}
+        </div>
       </div>
     </Layout>
   );
