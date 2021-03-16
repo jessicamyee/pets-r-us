@@ -26,6 +26,11 @@
   padding-bottom: 30px;
 }
 
+.signup-subhead{
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
 .individual-signup-input {
   width: 500px;
   height: 35px;
