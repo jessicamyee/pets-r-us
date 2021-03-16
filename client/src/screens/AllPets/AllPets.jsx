@@ -38,7 +38,6 @@ const AllPets = (props) => {
       key={index}
     />
   ))
-  console.log(petsJSX)
 
   return (
     <Layout user={props.user} backgroundColor={'#cfdbd5'}>
