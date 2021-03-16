@@ -27,6 +27,8 @@ function Step1(props) {
         value={props.breed}
         onChange={props.handleChange}
         required
+        // save to local storage after each step
+
       />
       <input
         className="create-age"
@@ -44,14 +46,14 @@ function Step1(props) {
         className="create-gender"
         name="gender"
         onChange={props.handleChange}
-        id="dropdown"
+          id="dropdown"          
       >
         <option value="" disable selected>
           Select Gender
         </option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
+        <option selected={props.gender==="male"} value="male">Male</option>
+        <option selected={props.gender==="female"} value="female">Female</option>
+        <option selected={props.gender==="other"} value="other">Other</option>
         </select>
         </div>
     </div>

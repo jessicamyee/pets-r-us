@@ -18,12 +18,11 @@ function Step3(props) {
       />
 
       <select className="create-animal-type" required name="type" onChange={props.handleChange} id="dropdown2">
-        <option value="" disable selected>Select Animal Type</option>
-        <option value="Doggo">Doggo</option>
-        <option value="Kitty">Kitty</option>
-        <option value="Bunny">Bunny</option>  
+        <option selected={props.type ===""} value="" disable selected>Select Animal Type</option>
+        <option selected={props.type ==="dog"} value="dog">Doggo</option>
+        <option selected={props.type ==="cat"} value="cat">Kitty</option>
+        <option selected={props.type ==="rabbit"} value="rabbit">Bunny</option>  
       </select>
-      
     </div>
   );
 }

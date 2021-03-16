@@ -9,14 +9,16 @@
 .form-buttons {
   display: flex;
   justify-content: space-evenly;
-
 }
+
 .form-header{
   display: flex;
   justify-content: center;
   font-family: "Pacifico", cursive;
   font-size: 60px;
   margin-bottom: 20px;
+  color: #233D4D;
+  margin-top: 30px;
 }
 
 .step-count{
@@ -24,7 +26,8 @@
   justify-content: center;
   margin-bottom: 20px;
   font-size: 45px;
-
+  color: #233D4D;
+  font-weight: 600;
 }
 
 .next-button, .prev-secondary  {
@@ -34,6 +37,7 @@
   color: whitesmoke;
   width: 100px;
   height: 40px;
+  align-items: center;
 }
 
 .next-button:hover, .prev-secondary:hover  {
@@ -41,19 +45,18 @@
   color: #233D4D;
 }
 
-
 @media screen and (max-width: 375px){
 .form-header{
   display: flex; 
   flex-wrap: wrap;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .step-count{
-  font-size: 32px;
+  font-size: 30px;
 }
 
   .submission-form-template{
-  width: 360px;
+  width: 340px;
 }
 }

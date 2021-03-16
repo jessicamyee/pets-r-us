@@ -21,7 +21,7 @@ function Step2(props) {
         className="create-link"
         id="link"
         name="link"
-        type="link"
+        type="text"
         placeholder="Enter Adoption Link"
         value={props.link}
         onChange={props.handleChange}
@@ -36,7 +36,7 @@ function Step2(props) {
         onChange={props.handleChange}
         maxlength="500"
         required
-      />
+        />
     </div>
   );
 }
