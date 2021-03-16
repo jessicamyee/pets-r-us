@@ -18,7 +18,7 @@
   font-size: 60px;
   margin-bottom: 20px;
   color: #233D4D;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .step-count{
@@ -27,6 +27,7 @@
   margin-bottom: 20px;
   font-size: 45px;
   color: #233D4D;
+  font-weight: 600;
 }
 
 .next-button, .prev-secondary  {
@@ -36,6 +37,7 @@
   color: whitesmoke;
   width: 100px;
   height: 40px;
+  align-items: center;
 }
 
 .next-button:hover, .prev-secondary:hover  {

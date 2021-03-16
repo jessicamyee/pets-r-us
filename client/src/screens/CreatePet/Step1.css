@@ -7,16 +7,20 @@
 
 .create-name {
   margin-bottom: 20px;
+background-color: whitesmoke;
 }
 
 .create-breed {
   margin-bottom: 20px;
+  background-color: whitesmoke;
 }
 
 .create-age {
   margin-bottom: 20px;
+  background-color: whitesmoke;
 }
 
 .select-create-gender {
   width: 500px;
+  
 }
