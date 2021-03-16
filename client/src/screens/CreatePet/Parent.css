@@ -49,14 +49,14 @@
 .form-header{
   display: flex; 
   flex-wrap: wrap;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .step-count{
-  font-size: 32px;
+  font-size: 30px;
 }
 
   .submission-form-template{
-  width: 360px;
+  width: 340px;
 }
 }
