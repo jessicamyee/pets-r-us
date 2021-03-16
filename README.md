@@ -3,7 +3,14 @@
 - Front-End deployed via [Netlify](https://pets-r-us.netlify.app/).
 - Back-End deployed via [Heroku](https://pets-r-us.herokuapp.com/api/pets).
 
-1. **Schema**: Below please find our Schema that drives this collaboration and project.
+**Preview of the App**
+![App Preview](https://i.imgur.com/hXmCxQg.png)
+
+
+1. **Overview:** Pets-R-Us is a full (Mongo/Express/React/Node) MERN stack application that allows local animal adoption agencies to post their adorable animals. Every year, thousands of animals are displaced and live without a home. It is our belief that every pet deserves a home. The following is a list of the features: our application has full CRUD on the back, and utilizing the React framework on the front end.
+
+
+2. **Schema**: Below please find our Schema that drives this collaboration and project.
 
 ```
 const Pet = new Schema(
@@ -33,7 +40,7 @@ const User = new Schema(
 )
 ```
 
-1. **API JSON**: Below please find our Heroku API data.
+3. **API JSON**: Below please find our Heroku API data.
 
 ```
 [
@@ -75,18 +82,13 @@ const User = new Schema(
 ```
 
 
-
-
-
-
-
-2.  **Component Hierarchy**:
+4.  **Component Hierarchy**:
 ![Whimsical](https://i.imgur.com/cF0CdnT.png)
 [See here for a closer view on Whimsical](https://whimsical.com/pets-r-us-BYYb4aEnZ6ZQp5euw1pyeM)
 
 
 
-3.  **Wireframes**:
+5.  **Wireframes**:
 ![Home Screens](https://i.imgur.com/OYqfzry.png)
 ![Sign up and Sign in Screens](https://i.imgur.com/POd6AuQ.png)
 ![Pets and Pet Details Screens](https://i.imgur.com/TsYshOU.png)
@@ -95,29 +97,6 @@ const User = new Schema(
 [See here for a closer view on AdobeXD](https://xd.adobe.com/view/4820e06a-5260-47cc-be25-641dc826cec1-1d73/)
 
 
-4. **Overview:** Pets-R-Us is a full (Mongo/Express/React/Node) MERN stack application that allows local animal adoption agencies to post their adorable animals. Every year, thousands of animals are displaced and live without a home. It is our belief that every pet deserves a home. The following is a list of the features: our application has full CRUD on the back, and utilizing the React framework on the front end.
-
-5. **MVP:** 
-
-- Create database using Mongo and express to fetch data about adoptable pets
-- Read in the adoptable pet records
-- Update/Delete record after verifying user authentication
-- Rendering different routes based on user credentials
-- Use React to create our wireframes
-- Implement search feature by animal type
-- Develop carousel on landing page
-- Responsive design on mobile and desktop devices
-
-6. **Post-MVP:**
-
-- Implementing "paw-like" feature using back-end updating Schema to include array of "likes"
-- Additional sort capabilities (price, breed, size, hypoallergenic)
-- Add another user/buyer then we become the marketplace aka the Amazon of pets and creatures
-- Develop carousel on animals page
-
-7. **Post-Post-MVP:**
-
-- Create "pet-recommendation" algorithm based on user preferences (geo-tag animals, size, type, etc.)
 
 ## Change Log
 - Implemented pagination in our "Add a Pet" form.
