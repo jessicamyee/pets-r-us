@@ -18,7 +18,7 @@ export default class Carousel extends React.Component {
 
         <Slider>
           <Slide index={0}>
-            <Link to="/pets/604bc417a4d94000043d28f6">
+            <Link to="/pets/604fae144944ba0004b1170c">
             <img
               className="carousel-image"
               src="https://i.imgur.com/4Hta9Pn.png"
@@ -27,7 +27,7 @@ export default class Carousel extends React.Component {
             </Link>
           </Slide>
           <Slide index={1}>
-            <Link to="/pets/604bc417a4d94000043d28f5">
+            <Link to="/pets/604fae144944ba0004b1170b">
               <img
                 className="carousel-image"
                 src="https://i.imgur.com/3KSWiDB.png"
@@ -35,7 +35,7 @@ export default class Carousel extends React.Component {
             </Link>
           </Slide>
           <Slide index={2}>
-            <Link to="/pets/604bc417a4d94000043d28f7">
+            <Link to="/pets/604fae144944ba0004b1170d">
               <img
                 className="carousel-image"
                 src="https://i.imgur.com/FllIf6K.png"
@@ -43,7 +43,7 @@ export default class Carousel extends React.Component {
             </Link>
           </Slide>
           <Slide index={3}>
-            <Link to="/pets/604bc417a4d94000043d28f4">
+            <Link to="/pets/604fae144944ba0004b1170a">
               <img
                 className="carousel-image"
                 src="https://i.imgur.com/eiKG7Ui.png"
@@ -54,7 +54,6 @@ export default class Carousel extends React.Component {
           
         <ButtonBack>&#171;</ButtonBack>
         <ButtonNext>&#187;</ButtonNext>
-        {/* <DotGroup></DotGroup> */}
 
       </CarouselProvider>
     );
