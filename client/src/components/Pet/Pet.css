@@ -28,9 +28,10 @@
   border: 1px solid #233D4D;
   border-radius: 3px;
   padding: 1vw;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+  margin-top: 10px;
   opacity: .9;
-  background-color: #84a59d;
+  background-color: #233D4D;
 }
 .all-pet-card:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 20px 10px 20px;
@@ -53,6 +54,7 @@
   justify-self: center;
   color: #233D4D;
   font-family: "Montserrat", sans-serif;
+  color:white;
 }
 
 .all-breed {
@@ -62,6 +64,7 @@
   margin-bottom: 10px;
   color: #233D4D;
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 .more {
@@ -70,6 +73,7 @@
   justify-self: center;
   color: #233D4D;
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 :visited {
