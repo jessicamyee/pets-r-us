@@ -1,6 +1,6 @@
-# Pets-Я-Us
+# Pets-R-Us
 
-- Front-End deployed via [Netlify](Links fourthcoming).
+- Front-End deployed via [Netlify](https://pets-r-us.netlify.app/).
 - Back-End deployed via [Heroku](https://pets-r-us.herokuapp.com/api/pets).
 
 1. **Schema**: Below please find our Schema that drives this collaboration and project.
