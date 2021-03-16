@@ -5,6 +5,7 @@
   margin-right: 150px;
   margin-left:150px;
 }
+
 .form-buttons {
   display: flex;
   justify-content: space-evenly;
@@ -16,9 +17,7 @@
   font-family: "Pacifico", cursive;
   font-size: 60px;
   margin-bottom: 20px;
-  /* color: #233D4D; */
   color:whitesmoke;
-  /* margin-top: 30px; */
   padding-top: 20px;
 }
 
@@ -27,8 +26,6 @@
   justify-content: center;
   margin-bottom: 20px;
   font-size: 45px;
-  
-  /* color: #233D4D; */
   color:whitesmoke;
   font-weight: 600;
 }
@@ -49,14 +46,14 @@
 }
 
 @media screen and (max-width: 375px){
-.form-header{
-  display: flex; 
-  flex-wrap: wrap;
-  font-size: 40px;
+.form-header {
+  font-size: 30px;
+  text-align: center;
+
 }
 
-.step-count{
-  font-size: 30px;
+.step-count {
+  font-size: 25px;
 }
 
   .submission-form-template{
