@@ -27,3 +27,23 @@
   opacity: 0.9;
   background-color: #233d4d;
 }
+
+.user-pets {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .user-pets-heading {
+    font-size: 28px;
+    width: 80vw;
+  }
+
+  .user-pets {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+  }
+}
