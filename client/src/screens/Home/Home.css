@@ -15,19 +15,24 @@
   line-height: 35px;
   border-top:1px solid #233D4D;
   border-radius: 1px;
-  padding-left: 40px;
+  padding-left: 60px;
   padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   text-align: left;
   background-color: whitesmoke;
 }
 
 .mission-header {
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 30px;
+  font-weight: 1000;
+  padding-bottom: 25px;
+  padding-top: 20px;
 }
 
 .mission-statement {
   margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .mission-link {
@@ -36,6 +41,7 @@
   border-radius: 3px;
   padding: 5px;
   background-color: #cfdbd5;
+  margin-bottom: 20px;
 }
 
 .mission-link:hover {
@@ -44,20 +50,10 @@
   box-shadow: rgba(0, 0, 0, 0.35) 20px 10px 20px;
 }
 
-.disclaimer {
-  font-size: 12px;
-  padding-left: 0vw;
-  padding-right: 15vw;
-  line-height: 18px;
-  margin-top: 10px;
-  padding-bottom:10px;
-}
-
 .our-carousel {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  /* border: 1px solid blue; */
   justify-items: center;
 }
 
@@ -102,7 +98,6 @@
   width: 10px;
   height: 2px;
   border-radius: 50px;
-  /* border:1px solid red; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -126,4 +121,16 @@
     margin-bottom: 20px;
   }
 }
+
+  @media only screen and (max-width: 502px) {
+    .mission-link {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .mission-link {
+      font-size: 16px;
+    }
+  }
 

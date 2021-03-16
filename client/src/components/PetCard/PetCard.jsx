@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import "./PetCard.css";
 
 const PetCard = (props) => {
   return (

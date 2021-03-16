@@ -20,19 +20,12 @@ function Home(props) {
           </div>
           <div className="mission-section">
             <div className="mission-header">Our Mission:</div>
-            <div className="mission-statement">Our
-            mission is to increase public awareness of adoptable pets from the
-            Northeast U.S. region. This serves as a one-stop-”adopt” platform
-            for you to browse adoptable pets across different shelters and
-            agencies. <br />
+            <div className="mission-statement">We are paw<span>&#8209;</span>ssionate about saving these adorable furry<span>&#8209;</span>friends, please consider giving them a fur<span>&#8209;</span>ever home and a second chance at life!
             </div>
             <div>
             <Link to="/pets" className="mission-link">
                 Adopt a pet and save a life!
             </Link>
-            </div>
-            <div className="disclaimer">
-              NOTE* Although we try our best to ensure the pets’ adoption information and status are updated, please contact the pet’s organization to ensure they’re still available and the information on Pets-R-Us is accurate.
             </div>
           </div>
         </div>

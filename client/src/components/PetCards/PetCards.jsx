@@ -2,7 +2,6 @@
 import { Component } from "react";
 import PetCard from "../PetCard/PetCard";
 import { getPets } from "../../services/pets";
-// import "./PetCards.css";
 
 class PetCards extends Component {
   constructor() {
