@@ -24,7 +24,7 @@ function Home(props) {
             </div>
             <div>
             <Link to="/pets" className="mission-link">
-                Adopt a pet and save a life!
+                Adopt a pet!
             </Link>
             </div>
           </div>
