@@ -38,10 +38,9 @@ const AllPets = (props) => {
       key={index}
     />
   ))
-  console.log(petsJSX)
 
   return (
-    <Layout user={props.user}>
+    <Layout user={props.user} backgroundColor={'#cfdbd5'}>
       <div className="all-pets-container-search">
         <Search
           className="search-bar"
