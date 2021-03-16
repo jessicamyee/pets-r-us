@@ -10,7 +10,6 @@ const MyPets = (props) => {
   useEffect(() => {
     const fetchMyPets = async () => {
       const pets = await getPets();
-      console.log(pets);
       setAllMyPets(pets);
     };
     fetchMyPets();
