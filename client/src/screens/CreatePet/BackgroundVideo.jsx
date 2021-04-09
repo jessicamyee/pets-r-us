@@ -2,7 +2,7 @@ import React from 'react';
 import "./BackgroundVideo.css"
 
 const BackgroundVideo = () => {
-  const videoSource = "https://res.cloudinary.com/dygk00sc0/video/upload/v1615838147/pets-r-us_2.0_hwksf3.mp4"
+  const videoSource = "https://res.cloudinary.com/dygk00sc0/video/upload/v1618004678/pets-r-us-two_rvehle.mp4"
 
   return (
     <div className="background-video">
